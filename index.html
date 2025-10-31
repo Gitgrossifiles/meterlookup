@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meter Lookup</title>
+  <style>
+    :root {
+      --gap: 14px;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: #f7f7f9;
+      color: #111;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.6rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e7e7ee;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--gap);
+      align-items: end;
+    }
+    label {
+      font-size: 0.9rem;
+      color: #333;
+      display: block;
+      margin-bottom: 6px;
+    }
+    select, button {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid #d6d6de;
+      background: #fff;
+      font-size: 0.95rem;
+    }
+    button {
+      background: #2b6ef2;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:disabled {
+      background: #a4b9fa;
+      cursor: not-allowed;
+    }
+    .helper {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #eee;
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eee;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #f1f5ff;
+    }
+    .pill {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid #e7e7ee;
+      border-radius: 999px;
+      background: #fff;
+      font-size: 0.85rem;
+      color: #333;
+    }
+    .results-card {
+      margin-top: 16px;
+    }
+    .notice {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Meter Lookup</h1>
+    <div class="card">
+      <div class="row">
+        <div>
+          <label for="unit">Unit</label>
+          <select id="unit">
+            <option value="" selected disabled>Select unit…</option>
+            <option value="gal">Gallons (Galappchart)</option>
+            <option value="cf">Cubic feet (Cfappchart)</option>
+          </select>
+        </div>
+        <div>
+          <label for="make">Make</label>
+          <select id="make" disabled>
+            <option value="" selected disabled>Select make…</option>
+          </select>
+        </div>
+        <div>
+          <label for="model">Model</label>
+          <select id="model" disabled>
+            <option value="" selected disabled>Select model…</option>
+          </select>
+        </div>
+        <div>
+          <label for="size">Size</label>
+          <select id="size" disabled>
+            <option value="" selected disabled>Select size…</option>
+          </select>
+        </div>
+        <div>
+          <label>&nbsp;</label>
+          <button id="searchBtn" disabled>Search</button>
+        </div>
+      </div>
+      <div class="helper">Choose the <span class="pill">Unit</span> first to load data. Then pick <span class="pill">Make</span>, <span class="pill">Model</span>, and <span class="pill">Size</span>.</div>
+      <div class="notice">Place this file next to <strong>Galappchart.json</strong> and <strong>Cfappchart.json</strong> (same folder). This app runs offline in any modern browser.</div>
+    </div>
+
+    <div class="card results-card hidden" id="resultsCard">
+      <div id="selectionSummary" class="helper"></div>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Flow Rate</th>
+            <th>Test Amount</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="noMatch" class="helper hidden">No matching row found.</div>
+    </div>
+
+    <div class="footer">
+      Tip: If you update the Excel files later, regenerate the JSON with the same names and reload this page.
+    </div>
+  </div>
+
+  <script>
+    const unitEl = document.getElementById('unit');
+    const makeEl = document.getElementById('make');
+    const modelEl = document.getElementById('model');
+    const sizeEl = document.getElementById('size');
+    const searchBtn = document.getElementById('searchBtn');
+    const resultsCard = document.getElementById('resultsCard');
+    const resultsTableBody = document.querySelector('#resultsTable tbody');
+    const noMatchEl = document.getElementById('noMatch');
+    const selectionSummary = document.getElementById('selectionSummary');
+
+    let rawData = []; // loaded JSON for the current unit
+    let filteredByMake = [];
+    let filteredByModel = [];
+
+    unitEl.addEventListener('change', async () => {
+      const val = unitEl.value;
+      resetSelect(makeEl, 'Select make…', true);
+      resetSelect(modelEl, 'Select model…', true);
+      resetSelect(sizeEl, 'Select size…', true);
+      searchBtn.disabled = true;
+      resultsCard.classList.add('hidden');
+
+      const file = (val === 'gal') ? 'Galappchart.json' : 'Cfappchart.json';
+      try {
+        const resp = await fetch(file, { cache: 'no-store' });
+        rawData = await resp.json();
+        // populate make options
+        const uniqueMakes = [...new Set(rawData.map(r => String(r.Make).trim()))].filter(Boolean).sort();
+        fillOptions(makeEl, uniqueMakes, 'Select make…');
+        makeEl.disabled = false;
+      } catch (e) {
+        alert('Failed to load ' + file + ': ' + e);
+      }
+    });
+
+    makeEl.addEventListener('change', () => {
+      const make = makeEl.value;
+      resetSelect(modelEl, 'Select model…');
+      resetSelect(sizeEl, 'Select size…');
+      searchBtn.disabled = true;
+      resultsCard.classList.add('hidden');
+
+      filteredByMake = rawData.filter(r => String(r.Make).trim() === make);
+      const uniqueModels = [...new Set(filteredByMake.map(r => String(r.Model).trim()))].filter(Boolean).sort();
+      fillOptions(modelEl, uniqueModels, 'Select model…');
+      modelEl.disabled = false;
+    });
+
+    modelEl.addEventListener('change', () => {
+      const model = modelEl.value;
+      resetSelect(sizeEl, 'Select size…');
+      searchBtn.disabled = true;
+      resultsCard.classList.add('hidden');
+
+      filteredByModel = filteredByMake.filter(r => String(r.Model).trim() === model);
+      const uniqueSizes = [...new Set(filteredByModel.map(r => String(r.Size).trim()))].filter(Boolean).sort();
+      fillOptions(sizeEl, uniqueSizes, 'Select size…');
+      sizeEl.disabled = false;
+    });
+
+    sizeEl.addEventListener('change', () => {
+      searchBtn.disabled = !sizeEl.value;
+      resultsCard.classList.add('hidden');
+    });
+
+    searchBtn.addEventListener('click', () => {
+      const make = makeEl.value;
+      const model = modelEl.value;
+      const size = sizeEl.value;
+
+      const match = filteredByModel.find(r => String(r.Size).trim() === size);
+      resultsTableBody.innerHTML = '';
+      selectionSummary.textContent = `Selected: Unit = ${unitEl.value === 'gal' ? 'Gallons' : 'Cubic feet'}, Make = ${make}, Model = ${model}, Size = ${size}`;
+
+      if (!match) {
+        noMatchEl.classList.remove('hidden');
+        resultsCard.classList.remove('hidden');
+        return;
+      }
+      noMatchEl.classList.add('hidden');
+
+      const flows = Array.isArray(match.Flows) ? match.Flows : [];
+      const amounts = Array.isArray(match.Amounts) ? match.Amounts : [];
+      const maxLen = Math.max(flows.length, amounts.length);
+
+      for (let i = 0; i < maxLen; i++) {
+        const tr = document.createElement('tr');
+        const idx = document.createElement('td');
+        idx.textContent = (i + 1).toString();
+        const flowTd = document.createElement('td');
+        flowTd.textContent = (flows[i] !== undefined && flows[i] !== null) ? flows[i] : '';
+        const amtTd = document.createElement('td');
+        amtTd.textContent = (amounts[i] !== undefined && amounts[i] !== null) ? amounts[i] : '';
+        tr.appendChild(idx);
+        tr.appendChild(flowTd);
+        tr.appendChild(amtTd);
+        resultsTableBody.appendChild(tr);
+      }
+
+      resultsCard.classList.remove('hidden');
+    });
+
+    function resetSelect(sel, placeholder, disable = false) {
+      sel.innerHTML = '';
+      const opt = document.createElement('option');
+      opt.value = '';
+      opt.disabled = true;
+      opt.selected = true;
+      opt.textContent = placeholder;
+      sel.appendChild(opt);
+      sel.disabled = disable;
+    }
+
+    function fillOptions(sel, arr, placeholder) {
+      resetSelect(sel, placeholder);
+      for (const v of arr) {
+        const opt = document.createElement('option');
+        opt.value = v;
+        opt.textContent = v;
+        sel.appendChild(opt);
+      }
+    }
+  </script>
+</body>
+</html>

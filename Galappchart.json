@@ -1,0 +1,4626 @@
+[
+  {
+    "Make": "Make",
+    "Model": "Model",
+    "Size": "Size",
+    "Flows": [
+      "Rate 1",
+      "Rate 2",
+      "Rate 3",
+      "Rate 4",
+      "Rate 5",
+      "Rate 6",
+      "Rate 7"
+    ],
+    "Amounts": [
+      "Amt1",
+      "Amt2",
+      "Amt3",
+      "Amt4",
+      "Amt5",
+      "Amt6",
+      "Amt7"
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "420",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "420",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "452",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "562",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "572",
+    "Size": "2\"",
+    "Flows": [
+      2,
+      15,
+      100
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "125-W",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "125-W",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Carlon",
+    "Model": "1502PR",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "8",
+      "50"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Carlon",
+    "Model": "150-2-R",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "8",
+      "50"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Carlon",
+    "Model": "2000-2R",
+    "Size": "2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "A",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "A",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "Accumag",
+    "Size": "6\"",
+    "Flows": [
+      "67"
+    ],
+    "Amounts": [
+      500
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "Arctic",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "BL04",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "1",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "BL05",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "1",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "BL05",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "1",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "BL09",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "35"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "C3000",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Elster/Neptune",
+    "Model": "C3000 T-10",
+    "Size": "2 x 5/8\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "C4000",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      15,
+      "120"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "3\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      20,
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "4\"",
+    "Flows": [
+      "1/2",
+      3,
+      10,
+      25,
+      "350"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "6\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      35,
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "C700",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "C700",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Amco",
+    "Model": "C700",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Amco",
+    "Model": "C700",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "C700",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Amco",
+    "Model": "C700",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "C700",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "C700",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "C700",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "8",
+      "50"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Amco",
+    "Model": "C700",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "C700",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "C700",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "C700",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "C700",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Gamon",
+    "Model": "CP",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "CSM",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      15,
+      "120"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "CSM",
+    "Size": "3\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      20,
+      "280"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "CSM",
+    "Size": "4\"",
+    "Flows": [
+      "1/2",
+      3,
+      10,
+      25,
+      "350"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "CSM",
+    "Size": "6\"",
+    "Flows": [
+      "1/2",
+      3,
+      12,
+      35,
+      "300"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "E2800",
+    "Size": "8\"",
+    "Flows": [
+      "5",
+      "20",
+      "35",
+      "100",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      100,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "ER",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "ER",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      ".11",
+      ".35",
+      "8"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      ".13",
+      ".4",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "3/4\"",
+    "Flows": [
+      ".15",
+      "1",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "1\"",
+    "Flows": [
+      ".3",
+      "1.5",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "1 1/2\"",
+    "Flows": [
+      ".6",
+      "4",
+      "60"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "2\"",
+    "Flows": [
+      "1",
+      "5",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      10,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "3\"",
+    "Flows": [
+      ".75",
+      "15",
+      "150"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "4\"",
+    "Flows": [
+      "1.5",
+      "20",
+      "220"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "6\"",
+    "Flows": [
+      "2",
+      "25",
+      "250"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "E-Series",
+    "Size": "8\"",
+    "Flows": [
+      "4",
+      "30",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "F/M TT",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Zenner",
+    "Model": "FH03",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Zenner",
+    "Model": "FHS",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": []
+  },
+  {
+    "Make": "Neptune",
+    "Model": "FHTT",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Zenner",
+    "Model": "FHZ03",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "3 x 3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25",
+      "120"
+    ],
+    "Amounts": [
+      5,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "4 x 1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "6 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "150"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "8 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "10 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "4\"",
+    "Flows": [
+      "8",
+      "20",
+      "80",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3",
+    "Size": "6\"",
+    "Flows": [
+      "9",
+      "15",
+      "100",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "FM3- RFM",
+    "Size": "6 x 2\"",
+    "Flows": [
+      "2",
+      "3",
+      "20",
+      "150",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "FS",
+    "Size": "10 x 2\"",
+    "Flows": [
+      "4",
+      "20",
+      "100",
+      "480"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "FSAA",
+    "Size": "8 x 2\"",
+    "Flows": [
+      "2 1/2",
+      "4",
+      "20",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "FSAA01",
+    "Size": "8 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "FSAA01",
+    "Size": "10 x 2\"",
+    "Flows": [
+      "4",
+      "15",
+      "50",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      100,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "H2",
+    "Size": "3\"",
+    "Flows": [
+      "4",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "H3000",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "ABB",
+    "Model": "H3000",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "HPT",
+    "Size": "4\"",
+    "Flows": [
+      "10",
+      "25",
+      "350"
+    ],
+    "Amounts": [
+      1,
+      10,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "HPT",
+    "Size": "6\"",
+    "Flows": [
+      "20",
+      "100",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      20,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "HPT",
+    "Size": "8\"",
+    "Flows": [],
+    "Amounts": []
+  },
+  {
+    "Make": "Neptune",
+    "Model": "HPT",
+    "Size": "10\"",
+    "Flows": [
+      "50",
+      "100",
+      "400"
+    ],
+    "Amounts": [
+      10,
+      20,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "HPT",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "HPT UME",
+    "Size": "8\"",
+    "Flows": [
+      "50",
+      "500",
+      "1800"
+    ],
+    "Amounts": [
+      100,
+      500,
+      1000
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "HT4000",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Hydrant",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Iperl",
+    "Size": "3/4\" Short",
+    "Flows": [
+      ".15",
+      "1",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Iperl",
+    "Size": "3/4\"",
+    "Flows": [
+      ".15",
+      "1",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Iperl",
+    "Size": "1\"",
+    "Flows": [
+      ".3",
+      "1.5",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Iperl",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      ".13",
+      ".4",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Iperl",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      ".13",
+      ".4",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Carlon",
+    "Model": "JSJ200",
+    "Size": "2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M120",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M170",
+    "Size": "2\"",
+    "Flows": [
+      2,
+      15,
+      100
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M2000",
+    "Size": "10\"",
+    "Flows": [
+      "250"
+    ],
+    "Amounts": []
+  },
+  {
+    "Make": "Badger",
+    "Model": "M25",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M25",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M35",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M40",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M55",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M70",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "M70",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1.3",
+      ".4",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      ".13",
+      ".4",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "3/4\"",
+    "Flows": [
+      ".15",
+      "1",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "1\"",
+    "Flows": [
+      ".3",
+      "1.5",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "1 1/2\"",
+    "Flows": [
+      ".6",
+      "4",
+      "60"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "2\"",
+    "Flows": [
+      "1",
+      "5",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "3\"",
+    "Flows": [
+      "2.5",
+      "15",
+      "200"
+    ],
+    "Amounts": [
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "4\"",
+    "Flows": [
+      "3.5",
+      "20",
+      "400"
+    ],
+    "Amounts": [
+      300,
+      500,
+      1000
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "6\"",
+    "Flows": [
+      "9",
+      "40",
+      "800"
+    ],
+    "Amounts": [
+      300,
+      1000,
+      2000
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Mach 10",
+    "Size": "8\"",
+    "Flows": [
+      "18",
+      "80",
+      "1000"
+    ],
+    "Amounts": [
+      2000,
+      3000,
+      5000
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "MagnetOFlow",
+    "Size": "3\"",
+    "Flows": [
+      "220"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MCT",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "6",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MCTII",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      2,
+      6,
+      15,
+      60,
+      90
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MCTII",
+    "Size": "3\"",
+    "Flows": [
+      "1/2",
+      3,
+      10,
+      20,
+      150,
+      280
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MCTII",
+    "Size": "4\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      25,
+      180,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MCTII (2)",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "6",
+      "15",
+      "60",
+      "90"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFLII-T1000",
+    "Size": "8 x 4\"",
+    "Flows": [
+      "6",
+      "10",
+      "25",
+      "180",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-452",
+    "Size": "4 x 1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40,
+      280
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-452",
+    "Size": "6 x 1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-452",
+    "Size": "8 x 1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-4572II",
+    "Size": "10 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-562",
+    "Size": "3 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50,
+      280
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-562",
+    "Size": "4 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-562",
+    "Size": "6 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-562",
+    "Size": "8 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-562II",
+    "Size": "6 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "8",
+      "50",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-562II",
+    "Size": "8 x 1 1/2\"",
+    "Flows": [
+      "1/2",
+      "8",
+      "50",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-572",
+    "Size": "3 x 2\"",
+    "Flows": [
+      2,
+      15,
+      100,
+      280
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-572",
+    "Size": "6 x 2\"",
+    "Flows": [
+      2,
+      15,
+      100,
+      300
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-572",
+    "Size": "8 x 2\"",
+    "Flows": [
+      2,
+      15,
+      100,
+      320
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-572II",
+    "Size": "6 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Elster",
+    "Model": "MFMII-Elster Mag",
+    "Size": "6 x 3\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "10",
+      "20",
+      "80",
+      "150",
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-M55",
+    "Size": "4 x 1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40",
+      "80",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "3 x 2\"",
+    "Flows": [
+      "1/4",
+      2,
+      6,
+      15,
+      60,
+      90,
+      280
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "4 x 2\"",
+    "Flows": [
+      "1/4",
+      2,
+      6,
+      15,
+      60,
+      90,
+      280
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "6 x 3\"",
+    "Flows": [
+      "1/2",
+      3,
+      10,
+      20,
+      80,
+      150,
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "8 x 4\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      25,
+      100,
+      180,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "10 x 6\"",
+    "Flows": [
+      "1 1/2",
+      5,
+      25,
+      50,
+      100,
+      250,
+      350
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      200,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "10 x 3\"",
+    "Flows": [
+      "2 1/2",
+      4,
+      50,
+      250,
+      350
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "8 x 2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "6",
+      "15",
+      "60",
+      "90",
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MCTII",
+    "Size": "12 x 6\"",
+    "Flows": [
+      "1 1/2",
+      "5",
+      "25",
+      "50",
+      "100",
+      "250",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      200,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR100",
+    "Size": "4 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      2,
+      20,
+      90,
+      280
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR100",
+    "Size": "6 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      2,
+      20,
+      100,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR100",
+    "Size": "8 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      2,
+      25,
+      100,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR100",
+    "Size": "10 x1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      2,
+      20,
+      100,
+      350
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR1300",
+    "Size": "10 x 6\"",
+    "Flows": [
+      5,
+      15,
+      50,
+      250,
+      350
+    ],
+    "Amounts": [
+      10,
+      100,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR160",
+    "Size": "4 x 2\"",
+    "Flows": [
+      2,
+      3,
+      20,
+      90,
+      280
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR160",
+    "Size": "6 x 2\"",
+    "Flows": [
+      2,
+      3,
+      20,
+      150,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR160",
+    "Size": "8 x 2\"",
+    "Flows": [
+      2,
+      3,
+      25,
+      160,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR160",
+    "Size": "10 x 2\"",
+    "Flows": [
+      2,
+      3,
+      25,
+      160,
+      350
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR350",
+    "Size": "6 x 3\"",
+    "Flows": [
+      "2 1/2",
+      4,
+      20,
+      150,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR350",
+    "Size": "8 x 3\"",
+    "Flows": [
+      "2 1/2",
+      4,
+      25,
+      180,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR350",
+    "Size": "10 x 3\"",
+    "Flows": [
+      "2 1/2",
+      "4",
+      "20",
+      "200",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR650",
+    "Size": "8 x 4\"",
+    "Flows": [
+      "3 1/2",
+      5,
+      25,
+      180,
+      320
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR650",
+    "Size": "10 x 4\"",
+    "Flows": [
+      "3 1/2",
+      "5",
+      "25",
+      "250",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-MVR650",
+    "Size": "10 x 4\"",
+    "Flows": [
+      "3 1/2",
+      "5",
+      "25",
+      "180",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey/Metron",
+    "Model": "MFMII-S175",
+    "Size": "6 x 3\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "8",
+      "15",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MFMII-S500",
+    "Size": "8 x 4\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "12",
+      "35",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey/Metron",
+    "Model": "MFMII-S500",
+    "Size": "8 x 4\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "12",
+      "35",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MHR",
+    "Size": "2\"",
+    "Flows": [
+      "4",
+      "5",
+      "20",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MHR",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "25",
+      "220"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "McCrometer",
+    "Model": "ML04",
+    "Size": "4\"",
+    "Flows": [
+      "190"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "MLP",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "MLP",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MVR100",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      2,
+      20,
+      100
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MVR1300 UME",
+    "Size": "6\"",
+    "Flows": [
+      "15",
+      "500",
+      "1100"
+    ],
+    "Amounts": [
+      100,
+      500,
+      1000
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MVR160",
+    "Size": "2\"",
+    "Flows": [
+      2,
+      3,
+      20,
+      150
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MVR350",
+    "Size": "3\"",
+    "Flows": [
+      "2 1/2",
+      4,
+      20,
+      300
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MVR50",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Hersey",
+    "Model": "MVR650",
+    "Size": "4\"",
+    "Flows": [
+      "3 1/2",
+      5,
+      25,
+      350
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "Octave",
+    "Size": "4\"",
+    "Flows": [
+      "245"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "Octave 750",
+    "Size": "3\"",
+    "Flows": [
+      "180"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Master Meter",
+    "Model": "Octave 750",
+    "Size": "4\"",
+    "Flows": [
+      "280"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni C2",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      15,
+      100
+    ],
+    "Amounts": []
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni C2",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      15,
+      "100"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni C2",
+    "Size": "3\"",
+    "Flows": [
+      "1/2",
+      3,
+      8,
+      20,
+      "100"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni C2",
+    "Size": "4\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      35,
+      "280"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni C2",
+    "Size": "6\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      35,
+      "300"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni F2",
+    "Size": "8\"",
+    "Flows": [
+      "2 1/2",
+      "5",
+      "25",
+      "100",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni H2",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni R2",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "8",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni R2",
+    "Size": "2\"",
+    "Flows": [
+      "1",
+      "3",
+      "8",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni T2",
+    "Size": "2\"",
+    "Flows": [
+      "1",
+      "5",
+      "20",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Omni T2",
+    "Size": "4\"",
+    "Flows": [
+      "2",
+      "4",
+      "20",
+      "100",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "PMM",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Zenner",
+    "Model": "PMT03",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "Propeller",
+    "Size": "4\"",
+    "Flows": [
+      "390"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Water Specialties",
+    "Model": "Propeller",
+    "Size": "4\"",
+    "Flows": [
+      "190"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Propeller 300",
+    "Size": "4\"",
+    "Flows": [
+      "310"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "Propeller 300",
+    "Size": "6\"",
+    "Flows": [
+      "330"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Protectus II",
+    "Size": "4 x 1\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "12",
+      "35",
+      "350"
+    ],
+    "Amounts": [
+      1,
+      1,
+      1,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Protectus III",
+    "Size": "10 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Protectus III",
+    "Size": "4 x 1\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "12",
+      "35",
+      "350"
+    ],
+    "Amounts": [
+      1,
+      1,
+      1,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Protectus III",
+    "Size": "6 x 1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "5",
+      "25",
+      "320"
+    ],
+    "Amounts": [
+      1,
+      1,
+      10,
+      50
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Protectus III",
+    "Size": "8 x 2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100",
+      "320"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Protectus III",
+    "Size": "4\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40",
+      "100",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "RCDL",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "15",
+      "60",
+      "200"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "RCDL",
+    "Size": "3\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "20",
+      "60",
+      "250"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "RCDL",
+    "Size": "4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "10",
+      "25",
+      "300"
+    ],
+    "Amounts": [
+      5,
+      1,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "RCDL II Turbo II",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "RCDL Turbo II",
+    "Size": "3\"",
+    "Flows": [
+      "5",
+      "2.0",
+      "200"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "S1000",
+    "Size": "6\"",
+    "Flows": [
+      "1",
+      "5",
+      "25",
+      "50",
+      "250"
+    ],
+    "Amounts": [
+      5,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "S130",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "15",
+      "80"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "S175",
+    "Size": "3\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "8",
+      "20",
+      "100"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "S500",
+    "Size": "4\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "12",
+      "35",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      10,
+      200
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "S88",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "8",
+      "15",
+      "50"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      100
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "SC",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Metron",
+    "Model": "Spectrum 260",
+    "Size": "4\"",
+    "Flows": [
+      "3/4",
+      "3",
+      "12",
+      "35",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50
+    ],
+    "Amounts": []
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "2\"",
+    "Flows": [
+      2,
+      15,
+      100
+    ],
+    "Amounts": []
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SR",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SR",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SR",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SR",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SR",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SR",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SR",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SR",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SR",
+    "Size": "2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SR",
+    "Size": "2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SR",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "8",
+      "80"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRH",
+    "Size": "2\"",
+    "Flows": [
+      "1/2",
+      3,
+      8,
+      15,
+      "120"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRH",
+    "Size": "3\"",
+    "Flows": [
+      "1/2",
+      3,
+      8,
+      20,
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRH",
+    "Size": "4\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      35,
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRH",
+    "Size": "6\"",
+    "Flows": [
+      "1 1/2",
+      5,
+      25,
+      50,
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRII",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRII",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRII",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRII",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SRII",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SRII",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SRII",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "SRII",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SRII",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SRII",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SRII",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Invensys",
+    "Model": "SRII",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "SRM",
+    "Size": "2\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "8",
+      "10",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-10",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-10",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      2,
+      15
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-10",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      3,
+      25
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-10",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      4,
+      40
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-10",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      8,
+      50
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-10",
+    "Size": "2\"",
+    "Flows": [
+      2,
+      15,
+      100
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "T1000",
+    "Size": "4\"",
+    "Flows": [
+      "6",
+      "10",
+      "25",
+      "250"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "T2",
+    "Size": "10\"",
+    "Flows": [],
+    "Amounts": []
+  },
+  {
+    "Make": "Badger",
+    "Model": "T200",
+    "Size": "2\"",
+    "Flows": [
+      "4",
+      "20",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Amco",
+    "Model": "T3000",
+    "Size": "3\"",
+    "Flows": [
+      "210"
+    ],
+    "Amounts": [
+      1000
+    ]
+  },
+  {
+    "Make": "Kent",
+    "Model": "T3000",
+    "Size": "3\"",
+    "Flows": [
+      "110"
+    ],
+    "Amounts": [
+      500
+    ]
+  },
+  {
+    "Make": "Amco",
+    "Model": "T-3000",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      "3",
+      "8",
+      "15",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "T3500",
+    "Size": "8\"",
+    "Flows": [
+      "20",
+      "35",
+      "100",
+      "350"
+    ],
+    "Amounts": [
+      100,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "T450",
+    "Size": "3\"",
+    "Flows": [
+      "4",
+      "5",
+      "20",
+      "250"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-8",
+    "Size": "2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-8",
+    "Size": "1 1/2\"",
+    "Flows": [
+      "1 1/2",
+      "8",
+      "50"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-8",
+    "Size": "1\"",
+    "Flows": [
+      "3/4",
+      "4",
+      "40"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-8",
+    "Size": "3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "25"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-8",
+    "Size": "5/8 x 3/4\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-8",
+    "Size": "5/8 x 1/2\"",
+    "Flows": [
+      "1/4",
+      "2",
+      "15"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-II",
+    "Size": "3\"",
+    "Flows": [
+      "5",
+      "20",
+      "350"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "T-II",
+    "Size": "4\"",
+    "Flows": [
+      "7",
+      "25",
+      "370"
+    ],
+    "Amounts": [
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Tru-Flo",
+    "Size": "2\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      15,
+      "120"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Tru-Flo",
+    "Size": "3\"",
+    "Flows": [
+      "1/4",
+      3,
+      8,
+      20,
+      "320"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Tru-Flo",
+    "Size": "4\"",
+    "Flows": [
+      "1/2",
+      3,
+      10,
+      35,
+      "350"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Tru-Flo",
+    "Size": "6\"",
+    "Flows": [
+      "3/4",
+      3,
+      12,
+      35,
+      "350"
+    ],
+    "Amounts": [
+      10,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "Tru-Flo/T-10",
+    "Size": "4 x 3/4\"",
+    "Flows": [
+      "1/2",
+      "3",
+      "10",
+      "35",
+      "350"
+    ],
+    "Amounts": [
+      5,
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Badger",
+    "Model": "TSM3",
+    "Size": "3\"",
+    "Flows": [
+      "4",
+      "5",
+      "20",
+      "250"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      500
+    ]
+  },
+  {
+    "Make": "Neptune",
+    "Model": "TT",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "Type 6",
+    "Size": "2\"",
+    "Flows": [
+      "2",
+      "15",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "W-1000",
+    "Size": "4\"",
+    "Flows": [
+      "10",
+      "15",
+      "100",
+      "300"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Rockwell",
+    "Model": "W160",
+    "Size": "2\"",
+    "Flows": [
+      "4",
+      "20",
+      "100"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "W160 Turbo",
+    "Size": "2\"",
+    "Flows": [
+      "3",
+      "4",
+      "20",
+      "120"
+    ],
+    "Amounts": [
+      10,
+      10,
+      100,
+      200
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "W2000",
+    "Size": "6\"",
+    "Flows": [
+      "20",
+      "100",
+      "300"
+    ],
+    "Amounts": [
+      100,
+      200,
+      500
+    ]
+  },
+  {
+    "Make": "Sensus",
+    "Model": "W3500",
+    "Size": "8\"",
+    "Flows": [
+      "430"
+    ],
+    "Amounts": []
+  },
+  {
+    "Make": "Zenner",
+    "Model": "ZPM",
+    "Size": "3\"",
+    "Flows": [
+      "7",
+      "20",
+      "180"
+    ],
+    "Amounts": [
+      10,
+      100,
+      200
+    ]
+  }
+]
