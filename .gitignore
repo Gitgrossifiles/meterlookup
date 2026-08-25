@@ -1,0 +1,5 @@
+# Local safety copies made before edits
+*.bak
+
+# Throwaway analysis output
+flow_rate_data_issues.csv
