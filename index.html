@@ -3,10 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meter Lookup</title>
+  <title>Meter Lookup &amp; Test Recorder</title>
   <style>
     :root {
       --gap: 14px;
+      --ok: #17803d;
+      --ok-bg: #e9f7ee;
+      --bad: #b42318;
+      --bad-bg: #fdeceb;
     }
     html, body {
       margin: 0;
@@ -16,7 +20,7 @@
       color: #111;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 24px;
     }
@@ -62,6 +66,12 @@
       background: #a4b9fa;
       cursor: not-allowed;
     }
+    button.secondary {
+      background: #fff;
+      color: #333;
+      border: 1px solid #d6d6de;
+    }
+    button.secondary:hover { background: #f3f4f8; }
     .helper {
       font-size: 0.85rem;
       color: #555;
@@ -84,6 +94,41 @@
     }
     th {
       background: #f1f5ff;
+      white-space: nowrap;
+    }
+    th.num, td.num { text-align: right; }
+    .table-wrap { overflow-x: auto; }
+    tbody input {
+      width: 100%;
+      min-width: 72px;
+      box-sizing: border-box;
+      padding: 8px 10px;
+      border: 1px solid #d6d6de;
+      border-radius: 8px;
+      font-size: 16px; /* keeps iOS from zooming on focus */
+      text-align: right;
+      background: #fff;
+      color: #111;
+    }
+    tbody input:focus {
+      outline: none;
+      border-color: #2b6ef2;
+      box-shadow: 0 0 0 3px rgba(43,110,242,0.15);
+    }
+    td.total { font-variant-numeric: tabular-nums; color: #333; }
+    td.pct {
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+    td.pct.ok  { color: var(--ok);  background: var(--ok-bg); }
+    td.pct.bad { color: var(--bad); background: var(--bad-bg); }
+    tfoot td {
+      background: #f7f8fb;
+      font-weight: 700;
+      border-top: 2px solid #e2e5ee;
+      border-bottom: none;
+      font-variant-numeric: tabular-nums;
     }
     .pill {
       display: inline-block;
@@ -94,9 +139,20 @@
       font-size: 0.85rem;
       color: #333;
     }
-    .results-card {
-      margin-top: 16px;
+    .results-card { margin-top: 16px; }
+    .results-head {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
     }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+    .btn-group button { width: auto; white-space: nowrap; }
     .notice {
       margin-top: 10px;
       font-size: 0.9rem;
@@ -112,7 +168,7 @@
 </head>
 <body>
   <div class="container">
-    <h1>Meter Lookup</h1>
+    <h1>Meter Lookup &amp; Test Recorder</h1>
     <div class="card">
       <div class="row">
         <div>
@@ -151,18 +207,48 @@
     </div>
 
     <div class="card results-card hidden" id="resultsCard">
-      <div id="selectionSummary" class="helper"></div>
-      <table id="resultsTable">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Flow Rate</th>
-            <th>Test Amount</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div class="results-head">
+        <div id="selectionSummary" class="helper" style="margin-top:0"></div>
+        <div class="btn-group">
+          <button id="resetResultsBtn" class="secondary" type="button">Reset Results</button>
+          <button id="newMeterBtn" class="secondary" type="button">New Meter</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Flow Rate</th>
+              <th class="num">Test Amount</th>
+              <th class="num">Fire</th>
+              <th class="num">High</th>
+              <th class="num">Low</th>
+              <th class="num">Total</th>
+              <th class="num">Percent</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Totals</td>
+              <td class="num" id="sumAmount">—</td>
+              <td class="num" id="sumFire">—</td>
+              <td class="num" id="sumHigh">—</td>
+              <td class="num" id="sumLow">—</td>
+              <td class="num" id="sumTotal">—</td>
+              <td class="num" id="sumPct">—</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
       <div id="noMatch" class="helper hidden">No matching row found.</div>
+      <div class="helper">
+        Percent = (Fire + High + Low) ÷ Test Amount. Values update as you type — press
+        <span class="pill">Enter</span> or <span class="pill">↓</span> to drop to the next row,
+        <span class="pill">Tab</span> to move across. Pass bands: first (lowest) flow rate
+        <strong id="bandLow"></strong>, every rate above it <strong id="bandHigh"></strong>.
+      </div>
     </div>
 
     <div class="footer">
@@ -171,6 +257,23 @@
   </div>
 
   <script>
+    // Accuracy bands for the green/red highlight — adjust to your standard.
+    // The first (lowest) flow rate gets the wider low-flow band; every rate above it
+    // is held to the tighter high-flow band.
+    const BAND_LOW  = { min: 95,   max: 101.5, label: 'Low flow' };
+    const BAND_HIGH = { min: 98.5, max: 101.5, label: 'High flow' };
+
+    // rowIndex 0 is the lowest flow rate on the chart.
+    function bandFor(rowIndex) {
+      return rowIndex === 0 ? BAND_LOW : BAND_HIGH;
+    }
+    function inBand(pct, band) {
+      return pct >= band.min && pct <= band.max;
+    }
+    function bandText(band) {
+      return band.label + ' ' + band.min + '–' + band.max + '%';
+    }
+
     const unitEl = document.getElementById('unit');
     const makeEl = document.getElementById('make');
     const modelEl = document.getElementById('model');
@@ -180,6 +283,17 @@
     const resultsTableBody = document.querySelector('#resultsTable tbody');
     const noMatchEl = document.getElementById('noMatch');
     const selectionSummary = document.getElementById('selectionSummary');
+    const resetResultsBtn = document.getElementById('resetResultsBtn');
+    const newMeterBtn = document.getElementById('newMeterBtn');
+    const sumAmountEl = document.getElementById('sumAmount');
+    const sumFireEl = document.getElementById('sumFire');
+    const sumHighEl = document.getElementById('sumHigh');
+    const sumLowEl = document.getElementById('sumLow');
+    const sumTotalEl = document.getElementById('sumTotal');
+    const sumPctEl = document.getElementById('sumPct');
+
+    document.getElementById('bandLow').textContent  = BAND_LOW.min + '–' + BAND_LOW.max + '%';
+    document.getElementById('bandHigh').textContent = BAND_HIGH.min + '–' + BAND_HIGH.max + '%';
 
     let rawData = []; // loaded JSON for the current unit
     let filteredByMake = [];
@@ -191,13 +305,14 @@
       resetSelect(modelEl, 'Select model…', true);
       resetSelect(sizeEl, 'Select size…', true);
       searchBtn.disabled = true;
-      resultsCard.classList.add('hidden');
+      hideResults();
 
       const file = (val === 'gal') ? 'Galappchart.json' : 'Cfappchart.json';
       try {
         const resp = await fetch(file, { cache: 'no-store' });
-        rawData = await resp.json();
-        // populate make options
+        const loaded = await resp.json();
+        // Drop the spreadsheet header row that rides along in the JSON export.
+        rawData = loaded.filter(r => String(r.Make).trim() !== 'Make');
         const uniqueMakes = [...new Set(rawData.map(r => String(r.Make).trim()))].filter(Boolean).sort();
         fillOptions(makeEl, uniqueMakes, 'Select make…');
         makeEl.disabled = false;
@@ -211,7 +326,7 @@
       resetSelect(modelEl, 'Select model…');
       resetSelect(sizeEl, 'Select size…');
       searchBtn.disabled = true;
-      resultsCard.classList.add('hidden');
+      hideResults();
 
       filteredByMake = rawData.filter(r => String(r.Make).trim() === make);
       const uniqueModels = [...new Set(filteredByMake.map(r => String(r.Model).trim()))].filter(Boolean).sort();
@@ -223,7 +338,7 @@
       const model = modelEl.value;
       resetSelect(sizeEl, 'Select size…');
       searchBtn.disabled = true;
-      resultsCard.classList.add('hidden');
+      hideResults();
 
       filteredByModel = filteredByMake.filter(r => String(r.Model).trim() === model);
       const uniqueSizes = [...new Set(filteredByModel.map(r => String(r.Size).trim()))].filter(Boolean).sort();
@@ -233,7 +348,7 @@
 
     sizeEl.addEventListener('change', () => {
       searchBtn.disabled = !sizeEl.value;
-      resultsCard.classList.add('hidden');
+      hideResults();
     });
 
     searchBtn.addEventListener('click', () => {
@@ -248,6 +363,7 @@
       if (!match) {
         noMatchEl.classList.remove('hidden');
         resultsCard.classList.remove('hidden');
+        clearTotals();
         return;
       }
       noMatchEl.classList.add('hidden');
@@ -257,21 +373,188 @@
       const maxLen = Math.max(flows.length, amounts.length);
 
       for (let i = 0; i < maxLen; i++) {
-        const tr = document.createElement('tr');
-        const idx = document.createElement('td');
-        idx.textContent = (i + 1).toString();
-        const flowTd = document.createElement('td');
-        flowTd.textContent = (flows[i] !== undefined && flows[i] !== null) ? flows[i] : '';
-        const amtTd = document.createElement('td');
-        amtTd.textContent = (amounts[i] !== undefined && amounts[i] !== null) ? amounts[i] : '';
-        tr.appendChild(idx);
-        tr.appendChild(flowTd);
-        tr.appendChild(amtTd);
-        resultsTableBody.appendChild(tr);
+        resultsTableBody.appendChild(buildRow(i, flows[i], amounts[i]));
       }
 
+      recalc();
       resultsCard.classList.remove('hidden');
+
+      const first = resultsTableBody.querySelector('input');
+      if (first) first.focus();
     });
+
+    resetResultsBtn.addEventListener('click', () => {
+      resultsTableBody.querySelectorAll('input').forEach(inp => { inp.value = ''; });
+      recalc();
+      const first = resultsTableBody.querySelector('input');
+      if (first) first.focus();
+    });
+
+    newMeterBtn.addEventListener('click', () => {
+      resetSelect(modelEl, 'Select model…', true);
+      resetSelect(sizeEl, 'Select size…', true);
+      makeEl.value = '';
+      filteredByMake = [];
+      filteredByModel = [];
+      searchBtn.disabled = true;
+      hideResults();
+      resultsTableBody.innerHTML = '';
+      makeEl.focus();
+    });
+
+    function buildRow(i, flow, amount) {
+      const tr = document.createElement('tr');
+      tr.dataset.amount = (amount !== undefined && amount !== null) ? String(amount) : '';
+
+      tr.appendChild(cell((i + 1).toString()));
+      tr.appendChild(cell(display(flow)));
+      tr.appendChild(cell(display(amount), 'num'));
+
+      for (const name of ['fire', 'high', 'low']) {
+        const td = document.createElement('td');
+        td.className = 'num';
+        const inp = document.createElement('input');
+        inp.type = 'text';
+        inp.inputMode = 'decimal';
+        inp.autocomplete = 'off';
+        inp.dataset.field = name;
+        inp.setAttribute('aria-label', name + ' reading, rate ' + (i + 1));
+        inp.addEventListener('input', recalc);
+        inp.addEventListener('keydown', onCellKey);
+        td.appendChild(inp);
+        tr.appendChild(td);
+      }
+
+      const totalTd = document.createElement('td');
+      totalTd.className = 'num total';
+      totalTd.dataset.role = 'total';
+      totalTd.textContent = '—';
+      tr.appendChild(totalTd);
+
+      const pctTd = document.createElement('td');
+      pctTd.className = 'num pct';
+      pctTd.dataset.role = 'pct';
+      pctTd.textContent = '—';
+      tr.appendChild(pctTd);
+
+      return tr;
+    }
+
+    // Enter / arrow keys move down the same column, Excel-style.
+    function onCellKey(e) {
+      if (e.key !== 'Enter' && e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+      e.preventDefault();
+      const rows = [...resultsTableBody.querySelectorAll('tr')];
+      const tr = e.target.closest('tr');
+      const step = (e.key === 'ArrowUp') ? -1 : 1;
+      const next = rows[rows.indexOf(tr) + step];
+      if (!next) { e.target.blur(); return; }
+      const target = next.querySelector(`input[data-field="${e.target.dataset.field}"]`);
+      if (target) { target.focus(); target.select(); }
+    }
+
+    function recalc() {
+      let tAmount = 0, tFire = 0, tHigh = 0, tLow = 0, tSum = 0;
+      let anyAmount = false, anyEntry = false;
+
+      const rows = [...resultsTableBody.querySelectorAll('tr')];
+      let allPass = true;
+
+      for (const [rowIndex, tr] of rows.entries()) {
+        const amount = num(tr.dataset.amount);
+        const inputs = [...tr.querySelectorAll('input')];
+        const vals = inputs.map(inp => num(inp.value));
+        const entered = inputs.some(inp => inp.value.trim() !== '');
+
+        const rowSum = vals.reduce((a, v) => a + (v === null ? 0 : v), 0);
+        const totalTd = tr.querySelector('[data-role="total"]');
+        const pctTd = tr.querySelector('[data-role="pct"]');
+
+        totalTd.textContent = entered ? fmt(rowSum) : '—';
+
+        const band = bandFor(rowIndex);
+        pctTd.classList.remove('ok', 'bad');
+        pctTd.title = bandText(band);
+        if (entered && amount !== null && amount !== 0) {
+          const pct = (rowSum / amount) * 100;
+          const pass = inBand(pct, band);
+          pctTd.textContent = fmt(pct, 2) + '%';
+          pctTd.classList.add(pass ? 'ok' : 'bad');
+          if (!pass) allPass = false;
+        } else {
+          pctTd.textContent = '—';
+        }
+
+        if (amount !== null) { tAmount += amount; anyAmount = true; }
+        if (entered) {
+          anyEntry = true;
+          tFire += vals[0] === null ? 0 : vals[0];
+          tHigh += vals[1] === null ? 0 : vals[1];
+          tLow  += vals[2] === null ? 0 : vals[2];
+          tSum  += rowSum;
+        }
+      }
+
+      sumAmountEl.textContent = anyAmount ? fmt(tAmount) : '—';
+      sumFireEl.textContent  = anyEntry ? fmt(tFire) : '—';
+      sumHighEl.textContent  = anyEntry ? fmt(tHigh) : '—';
+      sumLowEl.textContent   = anyEntry ? fmt(tLow) : '—';
+      sumTotalEl.textContent = anyEntry ? fmt(tSum) : '—';
+
+      sumPctEl.classList.remove('ok', 'bad');
+      if (anyEntry && tAmount > 0) {
+        sumPctEl.textContent = fmt((tSum / tAmount) * 100, 2) + '%';
+        // Each rate has its own band, so the total is graded on every row passing,
+        // not on the combined percentage falling in one band.
+        sumPctEl.classList.add(allPass ? 'ok' : 'bad');
+        sumPctEl.title = allPass ? 'All tested rates within band' : 'One or more rates out of band';
+      } else {
+        sumPctEl.textContent = '—';
+        sumPctEl.title = '';
+      }
+    }
+
+    function clearTotals() {
+      [sumAmountEl, sumFireEl, sumHighEl, sumLowEl, sumTotalEl, sumPctEl].forEach(el => {
+        el.textContent = '—';
+        el.classList.remove('ok', 'bad');
+      });
+    }
+
+    function hideResults() {
+      resultsCard.classList.add('hidden');
+    }
+
+    // Accepts plain decimals and mixed fractions like "1 1/2" or "3/4".
+    function num(v) {
+      if (v === undefined || v === null) return null;
+      const s = String(v).trim();
+      if (s === '') return null;
+      const frac = s.match(/^(?:(\d+)\s+)?(\d+)\s*\/\s*(\d+)$/);
+      if (frac) {
+        const den = parseFloat(frac[3]);
+        if (!den) return null;
+        return (frac[1] ? parseFloat(frac[1]) : 0) + parseFloat(frac[2]) / den;
+      }
+      const n = parseFloat(s.replace(/,/g, ''));
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function fmt(n, places = 3) {
+      if (!Number.isFinite(n)) return '—';
+      return String(parseFloat(n.toFixed(places)));
+    }
+
+    function display(v) {
+      return (v !== undefined && v !== null) ? String(v) : '';
+    }
+
+    function cell(text, cls) {
+      const td = document.createElement('td');
+      if (cls) td.className = cls;
+      td.textContent = text;
+      return td;
+    }
 
     function resetSelect(sel, placeholder, disable = false) {
       sel.innerHTML = '';
