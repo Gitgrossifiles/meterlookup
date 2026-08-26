@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meter Lookup &amp; Test Recorder</title>
+  <title>Meter Lookup &amp; Read Recorder</title>
   <style>
     :root {
       --gap: 14px;
@@ -11,6 +11,7 @@
       --ok-bg: #e9f7ee;
       --bad: #b42318;
       --bad-bg: #fdeceb;
+      --grp: #d9dbe4;
     }
     html, body {
       margin: 0;
@@ -20,14 +21,11 @@
       color: #111;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 24px;
     }
-    h1 {
-      margin-top: 0;
-      font-size: 1.6rem;
-    }
+    h1 { margin-top: 0; font-size: 1.6rem; }
     .nav {
       margin: 0 0 14px;
       font-size: 0.9rem;
@@ -75,21 +73,10 @@
       cursor: pointer;
       font-weight: 600;
     }
-    button:disabled {
-      background: #a4b9fa;
-      cursor: not-allowed;
-    }
-    button.secondary {
-      background: #fff;
-      color: #333;
-      border: 1px solid #d6d6de;
-    }
+    button:disabled { background: #a4b9fa; cursor: not-allowed; }
+    button.secondary { background: #fff; color: #333; border: 1px solid #d6d6de; }
     button.secondary:hover { background: #f3f4f8; }
-    .helper {
-      font-size: 0.85rem;
-      color: #555;
-      margin-top: 8px;
-    }
+    .helper { font-size: 0.85rem; color: #555; margin-top: 8px; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -100,20 +87,25 @@
       border: 1px solid #eee;
     }
     th, td {
-      padding: 10px 12px;
+      padding: 8px 10px;
       border-bottom: 1px solid #eee;
       text-align: left;
       font-size: 0.95rem;
     }
-    th {
-      background: #f1f5ff;
-      white-space: nowrap;
+    th { background: #f1f5ff; white-space: nowrap; }
+    th.grouphead {
+      text-align: center;
+      border-bottom: 1px solid #dfe4f5;
+      letter-spacing: 0.02em;
     }
     th.num, td.num { text-align: right; }
+    /* vertical rules separating the Fire / High / Low groups */
+    th.gstart, td.gstart { border-left: 2px solid var(--grp); }
+    th.gend, td.gend { border-right: 2px solid var(--grp); }
     .table-wrap { overflow-x: auto; }
     tbody input {
       width: 100%;
-      min-width: 72px;
+      min-width: 84px;
       box-sizing: border-box;
       padding: 8px 10px;
       border: 1px solid #d6d6de;
@@ -128,6 +120,15 @@
       border-color: #2b6ef2;
       box-shadow: 0 0 0 3px rgba(43,110,242,0.15);
     }
+    .regdiff {
+      font-size: 0.75rem;
+      color: #666;
+      text-align: right;
+      margin-top: 4px;
+      min-height: 1em;      /* reserve space so rows don't jump while typing */
+      font-variant-numeric: tabular-nums;
+    }
+    .regdiff.neg { color: var(--bad); font-weight: 700; }
     td.total { font-variant-numeric: tabular-nums; color: #333; }
     td.pct {
       font-weight: 700;
@@ -160,29 +161,18 @@
       align-items: center;
       justify-content: space-between;
     }
-    .btn-group {
-      display: flex;
-      gap: 10px;
-      flex: 0 0 auto;
-    }
+    .btn-group { display: flex; gap: 10px; flex: 0 0 auto; }
     .btn-group button { width: auto; white-space: nowrap; }
-    .notice {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: #444;
-    }
-    .footer {
-      margin-top: 18px;
-      font-size: 0.85rem;
-      color: #666;
-    }
+    .notice { margin-top: 10px; font-size: 0.9rem; color: #444; }
+    .footer { margin-top: 18px; font-size: 0.85rem; color: #666; }
     .hidden { display: none; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Meter Lookup &amp; Test Recorder</h1>
-    <div class="nav"><a href="readrecorder.html">Read Recorder (enter start &amp; end reads) →</a></div>
+    <h1>Meter Lookup &amp; Read Recorder</h1>
+    <div class="nav"><a href="index.html">← Test Recorder (enter totals directly)</a></div>
+
     <div class="card">
       <div class="row">
         <div>
@@ -195,21 +185,15 @@
         </div>
         <div>
           <label for="make">Make</label>
-          <select id="make" disabled>
-            <option value="" selected disabled>Select make…</option>
-          </select>
+          <select id="make" disabled><option value="" selected disabled>Select make…</option></select>
         </div>
         <div>
           <label for="model">Model</label>
-          <select id="model" disabled>
-            <option value="" selected disabled>Select model…</option>
-          </select>
+          <select id="model" disabled><option value="" selected disabled>Select model…</option></select>
         </div>
         <div>
           <label for="size">Size</label>
-          <select id="size" disabled>
-            <option value="" selected disabled>Select size…</option>
-          </select>
+          <select id="size" disabled><option value="" selected disabled>Select size…</option></select>
         </div>
         <div>
           <label>&nbsp;</label>
@@ -224,7 +208,7 @@
       <div class="results-head">
         <div id="selectionSummary" class="helper" style="margin-top:0"></div>
         <div class="btn-group">
-          <button id="resetResultsBtn" class="secondary" type="button">Reset Results</button>
+          <button id="resetResultsBtn" class="secondary" type="button">Reset Reads</button>
           <button id="newMeterBtn" class="secondary" type="button">New Meter</button>
         </div>
       </div>
@@ -232,14 +216,19 @@
         <table id="resultsTable">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Flow Rate</th>
-              <th class="num">Test Amount</th>
-              <th class="num">Fire</th>
-              <th class="num">High</th>
-              <th class="num">Low</th>
-              <th class="num">Total</th>
-              <th class="num">Percent</th>
+              <th rowspan="2">#</th>
+              <th rowspan="2">Flow Rate</th>
+              <th rowspan="2" class="num">Test Amount</th>
+              <th colspan="2" class="grouphead gstart gend">Fire</th>
+              <th colspan="2" class="grouphead gend">High</th>
+              <th colspan="2" class="grouphead gend">Low</th>
+              <th rowspan="2" class="num">Total</th>
+              <th rowspan="2" class="num">Percent</th>
+            </tr>
+            <tr>
+              <th class="num gstart">Start</th><th class="num gend">End</th>
+              <th class="num">Start</th><th class="num gend">End</th>
+              <th class="num">Start</th><th class="num gend">End</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -247,9 +236,9 @@
             <tr>
               <td colspan="2">Totals</td>
               <td class="num" id="sumAmount">—</td>
-              <td class="num" id="sumFire">—</td>
-              <td class="num" id="sumHigh">—</td>
-              <td class="num" id="sumLow">—</td>
+              <td colspan="2" class="num gstart gend" id="sumFire">—</td>
+              <td colspan="2" class="num gend" id="sumHigh">—</td>
+              <td colspan="2" class="num gend" id="sumLow">—</td>
               <td class="num" id="sumTotal">—</td>
               <td class="num" id="sumPct">—</td>
             </tr>
@@ -258,10 +247,12 @@
       </div>
       <div id="noMatch" class="helper hidden">No matching row found.</div>
       <div class="helper">
-        Percent = (Fire + High + Low) ÷ Test Amount. Values update as you type — press
-        <span class="pill">Enter</span> or <span class="pill">↓</span> to drop to the next row,
+        Each register records a <strong>Start</strong> and <strong>End</strong> read; the volume it
+        registered is End − Start, shown under the End box. Percent = (Fire + High + Low) ÷ Test Amount.
+        Press <span class="pill">Enter</span> or <span class="pill">↓</span> to drop to the next row,
         <span class="pill">Tab</span> to move across. Pass bands: first (lowest) flow rate
         <strong id="bandLow"></strong>, every rate above it <strong id="bandHigh"></strong>.
+        An End read lower than its Start shows red and flags the row.
       </div>
     </div>
 
@@ -278,15 +269,11 @@
     const BAND_HIGH = { min: 98.5, max: 101.5, label: 'High flow' };
 
     // rowIndex 0 is the lowest flow rate on the chart.
-    function bandFor(rowIndex) {
-      return rowIndex === 0 ? BAND_LOW : BAND_HIGH;
-    }
-    function inBand(pct, band) {
-      return pct >= band.min && pct <= band.max;
-    }
-    function bandText(band) {
-      return band.label + ' ' + band.min + '–' + band.max + '%';
-    }
+    function bandFor(rowIndex) { return rowIndex === 0 ? BAND_LOW : BAND_HIGH; }
+    function inBand(pct, band) { return pct >= band.min && pct <= band.max; }
+    function bandText(band) { return band.label + ' ' + band.min + '–' + band.max + '%'; }
+
+    const REGISTERS = ['fire', 'high', 'low'];
 
     const unitEl = document.getElementById('unit');
     const makeEl = document.getElementById('make');
@@ -309,7 +296,7 @@
     document.getElementById('bandLow').textContent  = BAND_LOW.min + '–' + BAND_LOW.max + '%';
     document.getElementById('bandHigh').textContent = BAND_HIGH.min + '–' + BAND_HIGH.max + '%';
 
-    let rawData = []; // loaded JSON for the current unit
+    let rawData = [];
     let filteredByMake = [];
     let filteredByModel = [];
 
@@ -336,27 +323,23 @@
     });
 
     makeEl.addEventListener('change', () => {
-      const make = makeEl.value;
       resetSelect(modelEl, 'Select model…');
       resetSelect(sizeEl, 'Select size…');
       searchBtn.disabled = true;
       hideResults();
-
-      filteredByMake = rawData.filter(r => String(r.Make).trim() === make);
-      const uniqueModels = [...new Set(filteredByMake.map(r => String(r.Model).trim()))].filter(Boolean).sort();
-      fillOptions(modelEl, uniqueModels, 'Select model…');
+      filteredByMake = rawData.filter(r => String(r.Make).trim() === makeEl.value);
+      const models = [...new Set(filteredByMake.map(r => String(r.Model).trim()))].filter(Boolean).sort();
+      fillOptions(modelEl, models, 'Select model…');
       modelEl.disabled = false;
     });
 
     modelEl.addEventListener('change', () => {
-      const model = modelEl.value;
       resetSelect(sizeEl, 'Select size…');
       searchBtn.disabled = true;
       hideResults();
-
-      filteredByModel = filteredByMake.filter(r => String(r.Model).trim() === model);
-      const uniqueSizes = [...new Set(filteredByModel.map(r => String(r.Size).trim()))].filter(Boolean).sort();
-      fillOptions(sizeEl, uniqueSizes, 'Select size…');
+      filteredByModel = filteredByMake.filter(r => String(r.Model).trim() === modelEl.value);
+      const sizes = [...new Set(filteredByModel.map(r => String(r.Size).trim()))].filter(Boolean).sort();
+      fillOptions(sizeEl, sizes, 'Select size…');
       sizeEl.disabled = false;
     });
 
@@ -366,10 +349,7 @@
     });
 
     searchBtn.addEventListener('click', () => {
-      const make = makeEl.value;
-      const model = modelEl.value;
-      const size = sizeEl.value;
-
+      const make = makeEl.value, model = modelEl.value, size = sizeEl.value;
       const match = filteredByModel.find(r => String(r.Size).trim() === size);
       resultsTableBody.innerHTML = '';
       selectionSummary.textContent = `Selected: Unit = ${unitEl.value === 'gal' ? 'Gallons' : 'Cubic feet'}, Make = ${make}, Model = ${model}, Size = ${size}`;
@@ -385,14 +365,12 @@
       const flows = Array.isArray(match.Flows) ? match.Flows : [];
       const amounts = Array.isArray(match.Amounts) ? match.Amounts : [];
       const maxLen = Math.max(flows.length, amounts.length);
-
       for (let i = 0; i < maxLen; i++) {
         resultsTableBody.appendChild(buildRow(i, flows[i], amounts[i]));
       }
 
       recalc();
       resultsCard.classList.remove('hidden');
-
       const first = resultsTableBody.querySelector('input');
       if (first) first.focus();
     });
@@ -424,19 +402,28 @@
       tr.appendChild(cell(display(flow)));
       tr.appendChild(cell(display(amount), 'num'));
 
-      for (const name of ['fire', 'high', 'low']) {
-        const td = document.createElement('td');
-        td.className = 'num';
-        const inp = document.createElement('input');
-        inp.type = 'text';
-        inp.inputMode = 'decimal';
-        inp.autocomplete = 'off';
-        inp.dataset.field = name;
-        inp.setAttribute('aria-label', name + ' reading, rate ' + (i + 1));
-        inp.addEventListener('input', recalc);
-        inp.addEventListener('keydown', onCellKey);
-        td.appendChild(inp);
-        tr.appendChild(td);
+      for (const reg of REGISTERS) {
+        for (const end of [false, true]) {
+          const td = document.createElement('td');
+          td.className = 'num' + (end ? ' gend' : (reg === 'fire' ? ' gstart' : ''));
+          const inp = document.createElement('input');
+          inp.type = 'text';
+          inp.inputMode = 'decimal';
+          inp.autocomplete = 'off';
+          inp.dataset.field = reg + '-' + (end ? 'end' : 'start');
+          inp.setAttribute('aria-label', `${reg} ${end ? 'end' : 'start'} read, rate ${i + 1}`);
+          inp.addEventListener('input', recalc);
+          inp.addEventListener('keydown', onCellKey);
+          td.appendChild(inp);
+          if (end) {
+            // running "End − Start" for this register, shown under the End box
+            const d = document.createElement('div');
+            d.className = 'regdiff';
+            d.dataset.role = 'diff-' + reg;
+            td.appendChild(d);
+          }
+          tr.appendChild(td);
+        }
       }
 
       const totalTd = document.createElement('td');
@@ -468,28 +455,44 @@
     }
 
     function recalc() {
-      let tAmount = 0, tFire = 0, tHigh = 0, tLow = 0, tSum = 0;
-      let anyAmount = false, anyEntry = false;
-
       const rows = [...resultsTableBody.querySelectorAll('tr')];
-      let allPass = true;
+      let tAmount = 0, tSum = 0;
+      const regTotals = { fire: 0, high: 0, low: 0 };
+      let anyAmount = false, anyEntry = false, allPass = true;
 
       for (const [rowIndex, tr] of rows.entries()) {
         const amount = num(tr.dataset.amount);
-        const inputs = [...tr.querySelectorAll('input')];
-        const vals = inputs.map(inp => num(inp.value));
-        const entered = inputs.some(inp => inp.value.trim() !== '');
+        let rowSum = 0, entered = false, invalid = false;
 
-        const rowSum = vals.reduce((a, v) => a + (v === null ? 0 : v), 0);
-        const totalTd = tr.querySelector('[data-role="total"]');
-        const pctTd = tr.querySelector('[data-role="pct"]');
+        for (const reg of REGISTERS) {
+          const s = num(tr.querySelector(`input[data-field="${reg}-start"]`).value);
+          const e = num(tr.querySelector(`input[data-field="${reg}-end"]`).value);
+          const diffEl = tr.querySelector(`[data-role="diff-${reg}"]`);
+          diffEl.classList.remove('neg');
 
-        totalTd.textContent = entered ? fmt(rowSum) : '—';
+          // a register only counts once BOTH reads are in
+          if (s === null || e === null) { diffEl.textContent = ''; continue; }
+          const diff = e - s;
+          diffEl.textContent = '= ' + fmt(diff);
+          entered = true;
+          if (diff < 0) { diffEl.classList.add('neg'); invalid = true; continue; }
+          rowSum += diff;
+          regTotals[reg] += diff;
+        }
 
         const band = bandFor(rowIndex);
+        const totalTd = tr.querySelector('[data-role="total"]');
+        const pctTd = tr.querySelector('[data-role="pct"]');
+        totalTd.textContent = (entered && !invalid) ? fmt(rowSum) : '—';
+
         pctTd.classList.remove('ok', 'bad');
         pctTd.title = bandText(band);
-        if (entered && amount !== null && amount !== 0) {
+        if (invalid) {
+          pctTd.textContent = 'check reads';
+          pctTd.classList.add('bad');
+          pctTd.title = 'An End read is lower than its Start read';
+          allPass = false;
+        } else if (entered && amount !== null && amount !== 0) {
           const pct = (rowSum / amount) * 100;
           const pass = inBand(pct, band);
           pctTd.textContent = fmt(pct, 2) + '%';
@@ -500,19 +503,13 @@
         }
 
         if (amount !== null) { tAmount += amount; anyAmount = true; }
-        if (entered) {
-          anyEntry = true;
-          tFire += vals[0] === null ? 0 : vals[0];
-          tHigh += vals[1] === null ? 0 : vals[1];
-          tLow  += vals[2] === null ? 0 : vals[2];
-          tSum  += rowSum;
-        }
+        if (entered && !invalid) { anyEntry = true; tSum += rowSum; }
       }
 
       sumAmountEl.textContent = anyAmount ? fmt(tAmount) : '—';
-      sumFireEl.textContent  = anyEntry ? fmt(tFire) : '—';
-      sumHighEl.textContent  = anyEntry ? fmt(tHigh) : '—';
-      sumLowEl.textContent   = anyEntry ? fmt(tLow) : '—';
+      sumFireEl.textContent = anyEntry ? fmt(regTotals.fire) : '—';
+      sumHighEl.textContent = anyEntry ? fmt(regTotals.high) : '—';
+      sumLowEl.textContent = anyEntry ? fmt(regTotals.low) : '—';
       sumTotalEl.textContent = anyEntry ? fmt(tSum) : '—';
 
       sumPctEl.classList.remove('ok', 'bad');
@@ -521,7 +518,7 @@
         // Each rate has its own band, so the total is graded on every row passing,
         // not on the combined percentage falling in one band.
         sumPctEl.classList.add(allPass ? 'ok' : 'bad');
-        sumPctEl.title = allPass ? 'All tested rates within band' : 'One or more rates out of band';
+        sumPctEl.title = allPass ? 'All tested rates within band' : 'One or more rates out of band or flagged';
       } else {
         sumPctEl.textContent = '—';
         sumPctEl.title = '';
@@ -535,9 +532,7 @@
       });
     }
 
-    function hideResults() {
-      resultsCard.classList.add('hidden');
-    }
+    function hideResults() { resultsCard.classList.add('hidden'); }
 
     // Accepts plain decimals and mixed fractions like "1 1/2" or "3/4".
     function num(v) {
@@ -559,9 +554,7 @@
       return String(parseFloat(n.toFixed(places)));
     }
 
-    function display(v) {
-      return (v !== undefined && v !== null) ? String(v) : '';
-    }
+    function display(v) { return (v !== undefined && v !== null) ? String(v) : ''; }
 
     function cell(text, cls) {
       const td = document.createElement('td');
