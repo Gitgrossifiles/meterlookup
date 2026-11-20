@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meter Lookup &amp; Lay Lengths</title>
+  <style>
+    :root {
+      --gap: 14px;
+      --accent: #2b6ef2;
+      --line: #e7e7ee;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: #f7f7f9;
+      color: #111;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    h1 { margin: 0 0 4px; font-size: 1.6rem; }
+    .subtitle { margin: 0 0 14px; color: #555; font-size: 0.95rem; }
+    .nav { margin: 0 0 14px; font-size: 0.9rem; display: flex; gap: 8px; flex-wrap: wrap; }
+    .nav a {
+      color: var(--accent); text-decoration: none; padding: 4px 10px;
+      border: 1px solid #d6d6de; border-radius: 999px; background: #fff;
+    }
+    .nav a:hover { background: #f1f5ff; }
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: 12px;
+      padding: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .chips button {
+      padding: 7px 12px; border-radius: 999px; border: 1px solid #d6d6de;
+      background: #fff; color: #333; font-size: 0.9rem; cursor: pointer;
+    }
+    .chips button[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: var(--accent); font-weight: 600; }
+    .row {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--gap); align-items: end;
+    }
+    label { font-size: 0.85rem; color: #333; display: block; margin-bottom: 6px; }
+    select, input[type="search"] {
+      width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 10px;
+      border: 1px solid #d6d6de; background: #fff; font-size: 16px; color: #111;
+    }
+    .toggle { display: flex; align-items: center; gap: 8px; padding: 10px 0; font-size: 0.95rem; cursor: pointer; }
+    .toggle input { width: 20px; height: 20px; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 12px; }
+    .actions button {
+      padding: 10px 16px; border-radius: 10px; border: none; background: var(--accent);
+      color: #fff; font-weight: 600; font-size: 0.95rem; cursor: pointer;
+    }
+    .actions button.secondary { background: #fff; color: #333; border: 1px solid #d6d6de; }
+    .actions button.secondary:hover { background: #f3f4f8; }
+    #status { margin-left: auto; font-size: 0.9rem; color: #555; }
+    #status.error { color: #b42318; font-weight: 600; }
+    .table-card { margin-top: 16px; padding: 0; overflow: hidden; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { padding: 9px 12px; border-bottom: 1px solid #eee; text-align: left; font-size: 0.93rem; vertical-align: top; }
+    thead th { background: #f1f5ff; white-space: nowrap; position: sticky; top: 0; z-index: 1; }
+    th.group { background: #e9eef9; font-size: 1rem; padding: 10px 12px; }
+    td.sel { width: 28px; text-align: center; padding-right: 0; }
+    td.sel input { width: 18px; height: 18px; margin: 0; }
+    td.size { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    td.len { font-weight: 600; font-variant-numeric: tabular-nums; }
+    td.len .one { white-space: nowrap; }
+    th.notes-h, td.notes { width: 34%; }
+    td.len .alt { font-weight: 400; color: #555; }
+    td.notes { color: #555; font-size: 0.86rem; }
+    .star { color: #d98a00; margin-left: 4px; }
+    .unv { color: #b42318; font-size: 0.75em; vertical-align: super; margin-left: 2px; }
+    tr.selected td { background: #fffbe6; }
+    .legend { padding: 10px 12px; font-size: 0.85rem; color: #666; border-top: 1px solid #eee; }
+    .empty td { text-align: center; color: #666; padding: 24px; }
+    #printFooter { display: none; }
+    @media (max-width: 700px) {
+      .container { padding: 14px; }
+      th, td { padding: 8px 8px; font-size: 0.88rem; }
+      td.notes { display: none; }
+      th.notes-h { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Flanged Lay Length Reference</h1>
+    <p class="subtitle">Flange face to flange face, inches. 1 1/2" and up, flanged ends only. Verify against the meter before ordering.</p>
+    <div class="nav">
+      <a href="index.html">← Test Recorder</a>
+      <a href="readrecorder.html">Read Recorder</a>
+    </div>
+
+    <div class="card" id="controls">
+      <div class="chips" id="mfrChips"></div>
+      <div class="row">
+        <div>
+          <label for="sizeSel">Size</label>
+          <select id="sizeSel"><option value="">All sizes</option></select>
+        </div>
+        <div>
+          <label for="typeSel">Type</label>
+          <select id="typeSel"><option value="">All types</option></select>
+        </div>
+        <div>
+          <label for="q">Search</label>
+          <input id="q" type="search" placeholder="model, size, length…" autocomplete="off" />
+        </div>
+        <div>
+          <label class="toggle"><input type="checkbox" id="popOnly" /> Popular only <span class="star">★</span></label>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="printBtn" type="button">Print</button>
+        <button id="clearSel" type="button" class="secondary" hidden>Clear selection</button>
+        <span id="status">Loading…</span>
+      </div>
+    </div>
+
+    <div class="card table-card">
+      <div class="table-wrap">
+        <table id="table">
+          <thead>
+            <tr>
+              <th class="sel-h"></th>
+              <th>Model</th>
+              <th>Type</th>
+              <th>Size</th>
+              <th>Lay length(s)</th>
+              <th class="notes-h">Notes</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="legend">★ common in our fleet &nbsp;·&nbsp; <span class="unv">‡</span> from distributor guide or catalog, not a spec sheet &nbsp;·&nbsp; check a row to build a custom print set</div>
+    </div>
+
+    <div id="printFooter"></div>
+  </div>
+
+  <script type="module">
+    import {
+      MFR_ORDER, sizeKey, formatInches, rowId, filterRows, printScope, groupByMfr,
+      loadSelection, saveSelection,
+    } from './laylengths.js';
+
+    const $ = (id) => document.getElementById(id);
+    const table = $('table');
+    const statusEl = $('status');
+    let data = { updated: '', rows: [] };
+    let selected = loadSelection(safeStorage());
+    const filters = { mfr: '', size: '', type: '', query: '', popularOnly: false };
+    let visible = [];
+
+    function safeStorage() {
+      try { return window.localStorage; } catch { return null; }
+    }
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    }
+
+    function lengthsHtml(lengths) {
+      return lengths.map(l => `<span class="one">${esc(formatInches(l.in))}${l.note ? ` <span class="alt">(${esc(l.note)})</span>` : ''}</span>`).join(' <span class="alt">/</span> ');
+    }
+
+    function buildControls() {
+      const chips = $('mfrChips');
+      const all = ['', ...MFR_ORDER.filter(m => data.rows.some(r => r.mfr === m))];
+      chips.innerHTML = all.map(m =>
+        `<button type="button" data-mfr="${esc(m)}" aria-pressed="${m === filters.mfr}">${m || 'All'}</button>`).join('');
+      chips.addEventListener('click', (e) => {
+        const b = e.target.closest('button[data-mfr]');
+        if (!b) return;
+        filters.mfr = b.dataset.mfr;
+        for (const x of chips.querySelectorAll('button')) x.setAttribute('aria-pressed', String(x.dataset.mfr === filters.mfr));
+        render();
+      });
+      const sizes = [...new Set(data.rows.map(r => r.size))].sort((a, b) => sizeKey(a) - sizeKey(b));
+      $('sizeSel').insertAdjacentHTML('beforeend', sizes.map(s => `<option value="${esc(s)}">${esc(s)}"</option>`).join(''));
+      const types = [...new Set(data.rows.map(r => r.type))].sort();
+      $('typeSel').insertAdjacentHTML('beforeend', types.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join(''));
+      $('sizeSel').addEventListener('change', e => { filters.size = e.target.value; render(); });
+      $('typeSel').addEventListener('change', e => { filters.type = e.target.value; render(); });
+      $('q').addEventListener('input', e => { filters.query = e.target.value; render(); });
+      $('popOnly').addEventListener('change', e => { filters.popularOnly = e.target.checked; render(); });
+      $('clearSel').addEventListener('click', () => { selected = new Set(); saveSelection(safeStorage(), selected); render(); });
+      table.addEventListener('change', (e) => {
+        const cb = e.target.closest('input[type="checkbox"][data-id]');
+        if (!cb) return;
+        if (cb.checked) selected.add(cb.dataset.id); else selected.delete(cb.dataset.id);
+        saveSelection(safeStorage(), selected);
+        cb.closest('tr').classList.toggle('selected', cb.checked);
+        updateStatus();
+      });
+    }
+
+    function updateStatus() {
+      const n = visible.length;
+      const s = [...selected].filter(id => data.rows.some(r => rowId(r) === id)).length;
+      statusEl.textContent = `${n} meter${n === 1 ? '' : 's'}${s ? ` · ${s} selected` : ''}`;
+      statusEl.classList.remove('error');
+      const clear = $('clearSel');
+      clear.hidden = s === 0;
+      clear.textContent = `Clear selection (${s})`;
+    }
+
+    function render() {
+      for (const tb of table.querySelectorAll('tbody')) tb.remove();
+      visible = filterRows(data.rows, filters);
+      if (!visible.length) {
+        table.insertAdjacentHTML('beforeend', '<tbody><tr class="empty"><td colspan="6">No meters match the current filters.</td></tr></tbody>');
+        updateStatus();
+        return;
+      }
+      const html = groupByMfr(visible).map(([mfr, rows]) => {
+        const body = rows.map(r => {
+          const id = rowId(r);
+          const sel = selected.has(id);
+          return `<tr data-id="${esc(id)}" class="${sel ? 'selected' : ''}">
+            <td class="sel"><input type="checkbox" data-id="${esc(id)}" ${sel ? 'checked' : ''} aria-label="select ${esc(r.model)} ${esc(r.size)}"></td>
+            <td>${esc(r.model)}${r.popular ? '<span class="star" title="common in our fleet">★</span>' : ''}</td>
+            <td>${esc(r.type)}</td>
+            <td class="size">${esc(r.size)}"</td>
+            <td class="len">${lengthsHtml(r.lengths)}${r.confidence === 'unverified' ? '<span class="unv" title="not from a spec sheet">‡</span>' : ''}</td>
+            <td class="notes">${esc(r.notes || '')}</td>
+          </tr>`;
+        }).join('');
+        return `<tbody data-mfr="${esc(mfr)}"><tr><th class="group" colspan="6">${esc(mfr)}</th></tr>${body}</tbody>`;
+      }).join('');
+      table.insertAdjacentHTML('beforeend', html);
+      updateStatus();
+    }
+
+    async function load() {
+      try {
+        const resp = await fetch('laylengths.json', { cache: 'no-store' });
+        if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+        data = await resp.json();
+      } catch (err) {
+        statusEl.textContent = 'Could not load lay length data. Check your connection and reload.';
+        statusEl.classList.add('error');
+        return;
+      }
+      buildControls();
+      render();
+    }
+    load();
+  </script>
+</body>
+</html>

@@ -56,3 +56,19 @@ test('groupByMfr follows MFR_ORDER and skips empty manufacturers', () => {
   assert.deepEqual(groupByMfr(filterRows(rows, {})).map(([m, rs]) => [m, rs.length]),
     [['Sensus', 3], ['Badger', 1], ['Hersey', 1]]);
 });
+test('filterRows puts popular models before other models of the same manufacturer', () => {
+  const r = [
+    row('Sensus', 'accuMAG', '2', [7.87]),
+    row('Sensus', 'SRH Compound', '2', [15.25], { popular: true }),
+    row('Sensus', 'Cordonel', '2', [10]),
+  ];
+  assert.deepEqual(filterRows(r, {}).map(x => x.model), ['SRH Compound', 'accuMAG', 'Cordonel']);
+});
+test('filterRows keeps all sizes of a popular model together', () => {
+  const r = [
+    row('Sensus', 'accuMAG', '2', [7.87]),
+    row('Sensus', 'OMNI C2', '10', [41.125]),
+    row('Sensus', 'OMNI C2', '2', [15.25], { popular: true }),
+  ];
+  assert.deepEqual(filterRows(r, {}).map(x => `${x.model} ${x.size}`), ['OMNI C2 2', 'OMNI C2 10', 'accuMAG 2']);
+});

@@ -83,17 +83,24 @@ export function rowId(row) {
   return `${row.mfr}|${row.model}|${row.size}`;
 }
 
-function compareRows(a, b) {
-  const m = MFR_ORDER.indexOf(a.mfr) - MFR_ORDER.indexOf(b.mfr);
-  if (m) return m;
-  const mod = a.model.localeCompare(b.model);
-  if (mod) return mod;
-  return sizeKey(a.size) - sizeKey(b.size);
+function makeComparator(popularModels) {
+  const isPop = (r) => popularModels.has(`${r.mfr}|${r.model}`) ? 1 : 0;
+  return (a, b) => {
+    const m = MFR_ORDER.indexOf(a.mfr) - MFR_ORDER.indexOf(b.mfr);
+    if (m) return m;
+    const pop = isPop(b) - isPop(a);
+    if (pop) return pop;
+    const mod = a.model.localeCompare(b.model);
+    if (mod) return mod;
+    return sizeKey(a.size) - sizeKey(b.size);
+  };
 }
 
 /** Filters by exact mfr/size/type, popular flag and a plain-text query; returns rows sorted for display. */
 export function filterRows(rows, f = {}) {
   const q = (f.query || '').trim().toLowerCase();
+  // A model counts as popular for ordering when any of its sizes is flagged, so its sizes stay together.
+  const popularModels = new Set(rows.filter(r => r.popular).map(r => `${r.mfr}|${r.model}`));
   return rows.filter(r => {
     if (f.mfr && r.mfr !== f.mfr) return false;
     if (f.size && r.size !== f.size) return false;
@@ -104,7 +111,7 @@ export function filterRows(rows, f = {}) {
       if (!hay.includes(q)) return false;
     }
     return true;
-  }).sort(compareRows);
+  }).sort(makeComparator(popularModels));
 }
 
 /** Decides which rows print and how the footer labels them. */
@@ -122,4 +129,24 @@ export function groupByMfr(rows) {
   return MFR_ORDER
     .map(m => [m, rows.filter(r => r.mfr === m)])
     .filter(([, rs]) => rs.length);
+}
+
+const SELECTION_KEY = 'laylengths.selected';
+
+/** Reads the saved row-id selection; empty Set when storage is missing, throws, or holds bad JSON. */
+export function loadSelection(storage) {
+  try {
+    const raw = storage && storage.getItem(SELECTION_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(arr) ? arr.filter(x => typeof x === 'string') : []);
+  } catch {
+    return new Set();
+  }
+}
+
+/** Persists the selection; failures are ignored (private mode, quota). */
+export function saveSelection(storage, ids) {
+  try {
+    storage && storage.setItem(SELECTION_KEY, JSON.stringify([...ids]));
+  } catch { /* ignore */ }
 }
