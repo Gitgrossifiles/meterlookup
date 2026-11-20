@@ -76,6 +76,38 @@
     .legend { padding: 10px 12px; font-size: 0.85rem; color: #666; border-top: 1px solid #eee; }
     .empty td { text-align: center; color: #666; padding: 24px; }
     #printFooter { display: none; }
+    @media print {
+      @page { size: letter; margin: 0.5in; }
+      html, body { background: #fff; color: #000; font-size: 10pt; }
+      .container { max-width: none; padding: 0; }
+      h1 { font-size: 16pt; margin-bottom: 2pt; }
+      .subtitle { font-size: 9pt; margin-bottom: 8pt; }
+      .nav, #controls, .legend, td.sel, th.sel-h, .star[title] { display: none !important; }
+      .card { border: none; box-shadow: none; border-radius: 0; padding: 0; }
+      .table-card { margin-top: 0; overflow: visible; }
+      .table-wrap { overflow: visible; }
+      table { border: 1px solid #999; }
+      th, td { border: 1px solid #999; padding: 3pt 5pt; font-size: 9pt; line-height: 1.25; }
+      thead { display: table-header-group; }
+      thead th { position: static; background: #ddd; }
+      th.group { background: #eee; font-size: 10pt; }
+      tbody { break-inside: auto; }
+      tr { break-inside: avoid; page-break-inside: avoid; }
+      tr:has(th.group) { break-after: avoid; page-break-after: avoid; }
+      th.group { padding-top: 8pt; }
+      th.model-h { width: 19%; } th.type-h { width: 11%; } th.size-h { width: 8%; }
+      th.len-h { width: 25%; } th.notes-h { width: 37%; }
+      tr.selected td { background: #fff; }
+      tr.no-print, tbody.no-print { display: none; }
+      td.notes { display: table-cell; font-size: 8pt; color: #333; }
+      th.notes-h { display: table-cell; }
+      td.len .alt { color: #333; }
+      .unv { color: #000; }
+      #printFooter {
+        display: block; margin-top: 8pt; padding-top: 4pt; border-top: 1px solid #999;
+        font-size: 8pt; color: #333;
+      }
+    }
     @media (max-width: 700px) {
       .container { padding: 14px; }
       th, td { padding: 8px 8px; font-size: 0.88rem; }
@@ -125,10 +157,10 @@
           <thead>
             <tr>
               <th class="sel-h"></th>
-              <th>Model</th>
-              <th>Type</th>
-              <th>Size</th>
-              <th>Lay length(s)</th>
+              <th class="model-h">Model</th>
+              <th class="type-h">Type</th>
+              <th class="size-h">Size</th>
+              <th class="len-h">Lay length(s)</th>
               <th class="notes-h">Notes</th>
             </tr>
           </thead>
@@ -151,7 +183,11 @@
     const statusEl = $('status');
     let data = { updated: '', rows: [] };
     let selected = loadSelection(safeStorage());
-    const filters = { mfr: '', size: '', type: '', query: '', popularOnly: false };
+    const params = new URLSearchParams(location.search);
+    const filters = {
+      mfr: params.get('mfr') || '', size: params.get('size') || '', type: '', query: '',
+      popularOnly: params.get('popular') === '1',
+    };
     let visible = [];
 
     function safeStorage() {
@@ -169,6 +205,7 @@
     function buildControls() {
       const chips = $('mfrChips');
       const all = ['', ...MFR_ORDER.filter(m => data.rows.some(r => r.mfr === m))];
+      if (!all.includes(filters.mfr)) filters.mfr = '';
       chips.innerHTML = all.map(m =>
         `<button type="button" data-mfr="${esc(m)}" aria-pressed="${m === filters.mfr}">${m || 'All'}</button>`).join('');
       chips.addEventListener('click', (e) => {
@@ -182,6 +219,8 @@
       $('sizeSel').insertAdjacentHTML('beforeend', sizes.map(s => `<option value="${esc(s)}">${esc(s)}"</option>`).join(''));
       const types = [...new Set(data.rows.map(r => r.type))].sort();
       $('typeSel').insertAdjacentHTML('beforeend', types.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join(''));
+      $('sizeSel').value = filters.size;
+      $('popOnly').checked = filters.popularOnly;
       $('sizeSel').addEventListener('change', e => { filters.size = e.target.value; render(); });
       $('typeSel').addEventListener('change', e => { filters.type = e.target.value; render(); });
       $('q').addEventListener('input', e => { filters.query = e.target.value; render(); });
@@ -194,7 +233,26 @@
         saveSelection(safeStorage(), selected);
         cb.closest('tr').classList.toggle('selected', cb.checked);
         updateStatus();
+        applyPrintScope();
       });
+      $('printBtn').addEventListener('click', () => {
+        if (!visible.length) return;
+        window.print();
+      });
+    }
+
+    // Marks rows outside the print scope so the browser's own Print command (and the iPad share sheet)
+    // produce the same sheet as the Print button.
+    function applyPrintScope() {
+      const scope = printScope(visible, selected, filters);
+      const keep = new Set(scope.rows.map(rowId));
+      for (const tr of table.querySelectorAll('tbody tr[data-id]')) tr.classList.toggle('no-print', !keep.has(tr.dataset.id));
+      for (const tb of table.querySelectorAll('tbody[data-mfr]')) {
+        tb.classList.toggle('no-print', !tb.querySelector('tr[data-id]:not(.no-print)'));
+      }
+      $('printFooter').textContent =
+        `Scope: ${scope.label} · ${scope.rows.length} meters · Data updated ${data.updated} · ` +
+        'Lay lengths are flanged face-to-face in inches; ‡ = not from a spec sheet. Confirm against the meter before ordering.';
     }
 
     function updateStatus() {
@@ -213,6 +271,7 @@
       if (!visible.length) {
         table.insertAdjacentHTML('beforeend', '<tbody><tr class="empty"><td colspan="6">No meters match the current filters.</td></tr></tbody>');
         updateStatus();
+        $('printFooter').textContent = 'No meters match the current filters.';
         return;
       }
       const html = groupByMfr(visible).map(([mfr, rows]) => {
@@ -232,6 +291,7 @@
       }).join('');
       table.insertAdjacentHTML('beforeend', html);
       updateStatus();
+      applyPrintScope();
     }
 
     async function load() {
