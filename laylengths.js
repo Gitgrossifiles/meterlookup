@@ -96,22 +96,40 @@ function makeComparator(popularModels) {
   };
 }
 
-/** Filters by exact mfr/size/type, popular flag and a plain-text query; returns rows sorted for display. */
+/** "6", "6x2" and "6x1 1/2" all have main size "6". */
+export function mainSize(size) {
+  return String(size).toLowerCase().split('x')[0].trim();
+}
+
+/** A query made only of digits, spaces, slashes and an optional inch mark is a size lookup, not free text. */
+function asSizeQuery(q) {
+  const m = q.match(/^([\d\s\/]+)"?$/);
+  return m ? m[1].trim().replace(/\s+/g, ' ') : null;
+}
+
+/** Filters by mfr/type, main size, popular flag and a query (size lookup or plain text); returns rows sorted for display. */
 export function filterRows(rows, f = {}) {
   const q = (f.query || '').trim().toLowerCase();
+  const sizeQ = q ? asSizeQuery(q) : null;
   // A model counts as popular for ordering when any of its sizes is flagged, so its sizes stay together.
   const popularModels = new Set(rows.filter(r => r.popular).map(r => `${r.mfr}|${r.model}`));
-  return rows.filter(r => {
+  const base = rows.filter(r => {
     if (f.mfr && r.mfr !== f.mfr) return false;
-    if (f.size && r.size !== f.size) return false;
+    if (f.size && mainSize(r.size) !== mainSize(f.size)) return false;
     if (f.type && r.type !== f.type) return false;
     if (f.popularOnly && !r.popular) return false;
-    if (q) {
-      const hay = [r.mfr, r.model, r.type, r.size, r.notes || '', formatLengths(r.lengths)].join(' ').toLowerCase();
-      if (!hay.includes(q)) return false;
-    }
     return true;
-  }).sort(makeComparator(popularModels));
+  });
+  const textMatch = (r) =>
+    [r.mfr, r.model, r.type, r.size, r.notes || '', formatLengths(r.lengths)].join(' ').toLowerCase().includes(q);
+  let out = base;
+  if (sizeQ !== null) {
+    out = base.filter(r => mainSize(r.size) === sizeQ);
+    if (!out.length) out = base.filter(textMatch); // e.g. "1/2" has no exact size; fall back to text
+  } else if (q) {
+    out = base.filter(textMatch);
+  }
+  return out.sort(makeComparator(popularModels));
 }
 
 /** Decides which rows print and how the footer labels them. */

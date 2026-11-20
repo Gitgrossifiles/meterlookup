@@ -72,3 +72,27 @@ test('filterRows keeps all sizes of a popular model together', () => {
   ];
   assert.deepEqual(filterRows(r, {}).map(x => `${x.model} ${x.size}`), ['OMNI C2 2', 'OMNI C2 10', 'accuMAG 2']);
 });
+test('size filter includes combo sizes sharing the main size', () => {
+  const r = [
+    row('Badger', 'FSAA assembly', '6', [45]),
+    row('Hersey', 'FM3 w/ bypass', '6x2', [45]),
+    row('Neptune', 'TRU/FLO 6x8 assembly', '6x8', [55.375]),
+    row('Sensus', 'OMNI C2', '16', [23.6]),
+  ];
+  assert.deepEqual(filterRows(r, { size: '6' }).map(x => x.size).sort(), ['6', '6x2', '6x8']);
+});
+test('a size-style query matches by size, not by text', () => {
+  const r = [
+    row('Badger', 'E-Series G2', '2', [10], { notes: 'Elliptical flange at 1 1/2" and 2". 10" needs spacer.' }),
+    row('Badger', 'E-Series G2', '6', [18]),
+    row('Hersey', 'FM3 w/ bypass', '6x2', [45]),
+    row('Sensus', 'OMNI C2', '16', [23.6]),
+    row('Sensus', 'OMNI C2', '1 1/2', [13]),
+  ];
+  assert.deepEqual(filterRows(r, { query: '6"' }).map(x => x.size).sort(), ['6', '6x2']);
+  assert.deepEqual(filterRows(r, { query: '6' }).map(x => x.size).sort(), ['6', '6x2']);
+  assert.ok(filterRows(r, { query: '1/2' }).some(x => x.size === '1 1/2')); // no 1/2" meter exists: text fallback
+  assert.deepEqual(filterRows(r, { query: '1 1/2' }).map(x => x.size), ['1 1/2']);
+  assert.deepEqual(filterRows(r, { query: '1 1/2"' }).map(x => x.size), ['1 1/2']);
+  assert.equal(filterRows(r, { query: 'C2' }).length, 2);
+});

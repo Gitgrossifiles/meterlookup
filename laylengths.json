@@ -1134,7 +1134,7 @@
      "note": "meter only"
     }
    ],
-   "confidence": "confirmed",
+   "confidence": "unverified",
    "source": "Sensus TM-780-R1; EJP"
   },
   {
@@ -3502,7 +3502,7 @@
      "in": 45
     }
    ],
-   "confidence": "unverified",
+   "confidence": "confirmed",
    "notes": "FSA6 / FSA8 meter + strainer + check",
    "source": "Metron Enduro FSA Oct 2024"
   },
@@ -4902,7 +4902,7 @@
      "in": 7.9
     }
    ],
-   "confidence": "unverified",
+   "confidence": "confirmed",
    "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
    "source": "AMCO MAGMASTER; ABB MFE"
   },
@@ -4916,7 +4916,7 @@
      "in": 7.9
     }
    ],
-   "confidence": "unverified",
+   "confidence": "confirmed",
    "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
    "source": "AMCO MAGMASTER; ABB MFE"
   },
@@ -4930,7 +4930,7 @@
      "in": 9.8
     }
    ],
-   "confidence": "unverified",
+   "confidence": "confirmed",
    "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
    "source": "AMCO MAGMASTER; ABB MFE"
   },
@@ -4944,7 +4944,7 @@
      "in": 11.8
     }
    ],
-   "confidence": "unverified",
+   "confidence": "confirmed",
    "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
    "source": "AMCO MAGMASTER; ABB MFE"
   },

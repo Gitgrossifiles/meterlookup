@@ -35,3 +35,11 @@ test('popular rows exist and every popular row is confirmed', () => {
   assert.ok(pop.length >= 25);
   for (const r of pop) assert.equal(r.confidence, 'confirmed', `${r.mfr} ${r.model} ${r.size}`);
 });
+test('rows with a distributor-only alternate are not marked confirmed', () => {
+  const find = (mfr, model, size) => data.rows.find(r => r.mfr === mfr && r.model === model && r.size === size);
+  assert.equal(find('Sensus', 'W-5500 DR', '10').confidence, 'unverified');
+  assert.equal(find('Metron-Farnier', 'Enduro FSA', '8').confidence, 'unverified');
+  assert.equal(find('Metron-Farnier', 'Enduro FSA', '6').confidence, 'confirmed');
+  assert.equal(find('Elster/Kent', 'MagMaster', '3').confidence, 'confirmed');
+  assert.equal(find('Elster/Kent', 'MagMaster', '8').confidence, 'unverified');
+});
