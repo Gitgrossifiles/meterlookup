@@ -46,3 +46,80 @@ export function validate(data) {
   });
   return errs;
 }
+
+/** Parses a size string ("1 1/2", "10", "6x2", "4x1 1/2") into a sortable number: main size plus bypass/100. */
+export function sizeKey(size) {
+  const parsePart = (s) => {
+    let total = 0;
+    for (const tok of String(s).trim().split(/\s+/)) {
+      if (!tok) continue;
+      const m = tok.match(/^(\d+)\/(\d+)$/);
+      total += m ? Number(m[1]) / Number(m[2]) : Number(tok) || 0;
+    }
+    return total;
+  };
+  const [main, bypass] = String(size).toLowerCase().split('x');
+  return parsePart(main) + (bypass ? parsePart(bypass) / 100 : 0);
+}
+
+/** 15.25 → "15 1/4"; values that are not exact 32nds stay decimal ("19.7"). */
+export function formatInches(n) {
+  const thirtySeconds = Math.round(n * 32);
+  if (Math.abs(thirtySeconds - n * 32) > 1e-9) return String(n);
+  const whole = Math.floor(thirtySeconds / 32);
+  let num = thirtySeconds - whole * 32;
+  if (num === 0) return String(whole);
+  let den = 32;
+  while (num % 2 === 0) { num /= 2; den /= 2; }
+  return whole ? `${whole} ${num}/${den}` : `${num}/${den}`;
+}
+
+/** [{in:17,note:'w/ strainer'},{in:10}] → "17 (w/ strainer) / 10" */
+export function formatLengths(lengths) {
+  return lengths.map(l => l.note ? `${formatInches(l.in)} (${l.note})` : formatInches(l.in)).join(' / ');
+}
+
+export function rowId(row) {
+  return `${row.mfr}|${row.model}|${row.size}`;
+}
+
+function compareRows(a, b) {
+  const m = MFR_ORDER.indexOf(a.mfr) - MFR_ORDER.indexOf(b.mfr);
+  if (m) return m;
+  const mod = a.model.localeCompare(b.model);
+  if (mod) return mod;
+  return sizeKey(a.size) - sizeKey(b.size);
+}
+
+/** Filters by exact mfr/size/type, popular flag and a plain-text query; returns rows sorted for display. */
+export function filterRows(rows, f = {}) {
+  const q = (f.query || '').trim().toLowerCase();
+  return rows.filter(r => {
+    if (f.mfr && r.mfr !== f.mfr) return false;
+    if (f.size && r.size !== f.size) return false;
+    if (f.type && r.type !== f.type) return false;
+    if (f.popularOnly && !r.popular) return false;
+    if (q) {
+      const hay = [r.mfr, r.model, r.type, r.size, r.notes || '', formatLengths(r.lengths)].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  }).sort(compareRows);
+}
+
+/** Decides which rows print and how the footer labels them. */
+export function printScope(visible, selectedIds, f = {}) {
+  const selected = visible.filter(r => selectedIds.has(rowId(r)));
+  let rows, label;
+  if (selected.length) { rows = selected; label = 'Selected meters'; }
+  else { rows = visible; label = f.popularOnly ? 'Popular meters' : 'All meters'; }
+  if (f.mfr) label += ` · ${f.mfr}`;
+  return { rows, label };
+}
+
+/** [[mfr, rows], ...] in MFR_ORDER, omitting manufacturers with no rows. */
+export function groupByMfr(rows) {
+  return MFR_ORDER
+    .map(m => [m, rows.filter(r => r.mfr === m)])
+    .filter(([, rs]) => rs.length);
+}
