@@ -1,0 +1,5009 @@
+{
+ "updated": "2026-11-20",
+ "rows": [
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "popular": true,
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 15.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "popular": true,
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "popular": true,
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "popular": true,
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "popular": true,
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 30.125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI C2",
+   "type": "Compound",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 41.125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ C2.",
+   "source": "Sensus WDS-10017-10"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ C2S",
+   "type": "Compound",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Stainless body, same footprint as C2",
+   "source": "Sensus WDS-10000-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ C2S",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 15.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Stainless body, same footprint as C2",
+   "source": "Sensus WDS-10000-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ C2S",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Stainless body, same footprint as C2",
+   "source": "Sensus WDS-10000-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17,
+     "note": "w/ strainer"
+    },
+    {
+     "in": 10,
+     "note": "no strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 19
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 23
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 27
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 30.125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI T2",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 41.125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer included. Also OMNI+ T2. Not made above 10\".",
+   "source": "Sensus WDS-10018-09"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ T2S",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Stainless body",
+   "source": "Sensus WDS-10001-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ T2S",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Stainless body",
+   "source": "Sensus WDS-10001-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ T2S",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 19
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Stainless body",
+   "source": "Sensus WDS-10001-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI R2",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Also OMNI+ R2. Only made in 1 1/2\" and 2\".",
+   "popular": true,
+   "source": "Sensus WDS-10029-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI R2",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17,
+     "note": "w/ strainer"
+    },
+    {
+     "in": 10,
+     "note": "no strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Also OMNI+ R2. Only made in 1 1/2\" and 2\".",
+   "popular": true,
+   "source": "Sensus WDS-10029-03"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI F2 Fireline",
+   "type": "Fire service",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 33,
+     "note": "meter"
+    },
+    {
+     "in": 51.875,
+     "note": "w/ optional spool"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long length = legacy FireLine FM-720 footprint. Also OMNI+ F2.",
+   "source": "Sensus WDS-10019-07"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI F2 Fireline",
+   "type": "Fire service",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 45,
+     "note": "meter"
+    },
+    {
+     "in": 67.625,
+     "note": "w/ optional spool"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long length = legacy FireLine FM-720 footprint. Also OMNI+ F2.",
+   "source": "Sensus WDS-10019-07"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI F2 Fireline",
+   "type": "Fire service",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 53,
+     "note": "meter"
+    },
+    {
+     "in": 77,
+     "note": "w/ optional spool"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long length = legacy FireLine FM-720 footprint. Also OMNI+ F2.",
+   "source": "Sensus WDS-10019-07"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI F2 Fireline",
+   "type": "Fire service",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 68,
+     "note": "meter"
+    },
+    {
+     "in": 90,
+     "note": "w/ optional spool"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long length = legacy FireLine FM-720 footprint. Also OMNI+ F2.",
+   "source": "Sensus WDS-10019-07"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ F2 Fireline Bypass Retrofit",
+   "type": "Bypass meter",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Spacer supplied when replacing a flanged SR bypass (13 / 17)",
+   "source": "Sensus WDS-10047-02"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "OMNI+ F2 Fireline Bypass Retrofit",
+   "type": "Bypass meter",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Spacer supplied when replacing a flanged SR bypass (13 / 17)",
+   "source": "Sensus WDS-10047-02"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Compact FireLine assembly",
+   "type": "Fire assembly",
+   "size": "4x1 1/2",
+   "lengths": [
+    {
+     "in": 33
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Spec maximums",
+   "source": "Sensus CFL-STD-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Compact FireLine assembly",
+   "type": "Fire assembly",
+   "size": "6x2",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Spec maximums",
+   "source": "Sensus CFL-STD-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Compact FireLine assembly",
+   "type": "Fire assembly",
+   "size": "8x2",
+   "lengths": [
+    {
+     "in": 53
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Spec maximums",
+   "source": "Sensus CFL-STD-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Compact FireLine assembly",
+   "type": "Fire assembly",
+   "size": "10x2",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Spec maximums",
+   "source": "Sensus CFL-STD-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "FireLine FM-720 assembly",
+   "type": "Fire assembly",
+   "size": "4x1 1/2",
+   "lengths": [
+    {
+     "in": 51.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "W-series turbo + strainer + check + bypass",
+   "source": "Sensus FM-720-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "FireLine FM-720 assembly",
+   "type": "Fire assembly",
+   "size": "6x2",
+   "lengths": [
+    {
+     "in": 67.625
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "W-series turbo + strainer + check + bypass",
+   "source": "Sensus FM-720-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "FireLine FM-720 assembly",
+   "type": "Fire assembly",
+   "size": "8x2",
+   "lengths": [
+    {
+     "in": 77
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "W-series turbo + strainer + check + bypass",
+   "source": "Sensus FM-720-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "FireLine FM-720 assembly",
+   "type": "Fire assembly",
+   "size": "10x2",
+   "lengths": [
+    {
+     "in": 90
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "W-series turbo + strainer + check + bypass",
+   "source": "Sensus FM-720-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Cordonel",
+   "type": "Ultrasonic",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus Cordonel NA data sheet"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Cordonel",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "turbo"
+    },
+    {
+     "in": 15.25,
+     "note": "compound"
+    },
+    {
+     "in": 17,
+     "note": "PD / turbo w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus Cordonel NA data sheet"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Cordonel",
+   "type": "Ultrasonic",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17,
+     "note": "compound"
+    },
+    {
+     "in": 19,
+     "note": "turbo"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus Cordonel NA data sheet"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Cordonel",
+   "type": "Ultrasonic",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20,
+     "note": "compound"
+    },
+    {
+     "in": 23,
+     "note": "turbo"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus Cordonel NA data sheet"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 5.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 6.5
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.3
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.5
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 15.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.1
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "Hydroverse",
+   "type": "Mag",
+   "size": "16",
+   "lengths": [
+    {
+     "in": 23.6
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools in a mechanical-meter setting",
+   "source": "Sensus WDS-10033-01"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 5.91
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 7.87
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 7.87
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.84
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.81
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.78
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 15.75
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.69
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "accuMAG",
+   "type": "Mag",
+   "size": "16",
+   "lengths": [
+    {
+     "in": 31.5
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Discontinued. Dimension column inferred from brochure.",
+   "source": "Sensus accuMAG brochure"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SRH Compound",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 15.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Rockwell / Invensys / Sensus. Not offered in 1 1/2\". HBK confirmed 2026-11-20.",
+   "popular": true,
+   "source": "Sensus CM-972; HBK"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SRH Compound",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Rockwell / Invensys / Sensus. Not offered in 1 1/2\". HBK confirmed 2026-11-20.",
+   "popular": true,
+   "source": "Sensus CM-972; HBK"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SRH Compound",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Rockwell / Invensys / Sensus. Not offered in 1 1/2\". HBK confirmed 2026-11-20.",
+   "popular": true,
+   "source": "Sensus CM-972; HBK"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SRH Compound",
+   "type": "Compound",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Rockwell / Invensys / Sensus. Not offered in 1 1/2\". HBK confirmed 2026-11-20.",
+   "popular": true,
+   "source": "Sensus CM-972; HBK"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SRH 8\" manifold",
+   "type": "Compound",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 76.75,
+     "note": "solid spool style"
+    },
+    {
+     "in": 79,
+     "note": "flanged coupling adapter style"
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Two 4\" SRH on manifolds; EJP guide says 75",
+   "source": "Sensus CM-974"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SR / SR II",
+   "type": "PD",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Flanged-end version. Rockwell / Invensys / Sensus. HBK confirmed 2026-11-20.",
+   "popular": true,
+   "source": "EJP guide R-21; HBK"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "SR / SR II",
+   "type": "PD",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Flanged-end version. Rockwell / Invensys / Sensus. HBK confirmed 2026-11-20.",
+   "popular": true,
+   "source": "EJP guide R-21; HBK"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-120 DR / DRS",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "unverified",
+   "source": "EJP guide R-21"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-160 DR",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "meter only"
+    },
+    {
+     "in": 17.25,
+     "note": "w/ separate 7\" strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus TM-812"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-160 DRS",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Integral strainer",
+   "source": "Sensus W160-S sheet"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-350 DR",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12,
+     "note": "meter only"
+    },
+    {
+     "in": 19.25,
+     "note": "w/ separate 7\" strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus W350 DR sheet"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-350 DRS",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 19
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Integral strainer",
+   "source": "EJP guide R-21"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-1000 DR",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14,
+     "note": "meter only"
+    },
+    {
+     "in": 23.25,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus TM-890-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-1000 DRS",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 23
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Integral strainer",
+   "source": "search snippet only"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-2000 DR",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18,
+     "note": "meter only"
+    },
+    {
+     "in": 27.125,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "unverified",
+   "source": "EJP guide R-21"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-3500 DR",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20,
+     "note": "meter only"
+    },
+    {
+     "in": 30.125,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "unverified",
+   "source": "EJP guide R-21"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-5500 DR",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 41.125,
+     "note": "as shipped w/ strainer"
+    },
+    {
+     "in": 26,
+     "note": "meter only"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Sensus TM-780-R1; EJP"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-5500 DRFS",
+   "type": "Fire service",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 61.875
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "UL fire service strainer",
+   "source": "Sensus FM-925-R1"
+  },
+  {
+   "mfr": "Sensus",
+   "model": "W-10000 DR",
+   "type": "Turbine",
+   "size": "16",
+   "lengths": [
+    {
+     "in": 29.875,
+     "note": "meter only"
+    },
+    {
+     "in": 48,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "unverified",
+   "source": "EJP guide R-21"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 12.625
+    },
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "popular": true,
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "turbo"
+    },
+    {
+     "in": 15.25,
+     "note": "compound"
+    },
+    {
+     "in": 17,
+     "note": "PD / turbo w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "popular": true,
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12,
+     "note": "turbo"
+    },
+    {
+     "in": 17,
+     "note": "compound"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "popular": true,
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14,
+     "note": "turbo"
+    },
+    {
+     "in": 20,
+     "note": "compound"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "popular": true,
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18,
+     "note": "turbo"
+    },
+    {
+     "in": 24,
+     "note": "compound"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "popular": true,
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "popular": true,
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "E-Series G2",
+   "type": "Ultrasonic",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange at 1 1/2\" and 2\". Spacer kits reach FSM / FSAA / Combo lengths; 10\" needs 8.09\" spacer to match Turbo 26\".",
+   "source": "Badger ESM-DS-05582-EN-01"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Recordall Compound",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 15.25,
+     "note": "std"
+    },
+    {
+     "in": 17,
+     "note": "w/ flange adapter kit"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka RCDL Comp / CSM (Badger Compound Series Meter prefix)",
+   "popular": true,
+   "source": "Badger RCS-DS-00078-EN-09"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Recordall Compound",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka RCDL Comp / CSM (Badger Compound Series Meter prefix)",
+   "popular": true,
+   "source": "Badger RCS-DS-00078-EN-09"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Recordall Compound",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20,
+     "note": "std"
+    },
+    {
+     "in": 24,
+     "note": "w/ flange adapter kit"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka RCDL Comp / CSM (Badger Compound Series Meter prefix)",
+   "popular": true,
+   "source": "Badger RCS-DS-00078-EN-09"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Recordall Compound",
+   "type": "Compound",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka RCDL Comp / CSM (Badger Compound Series Meter prefix)",
+   "popular": true,
+   "source": "Badger RCS-DS-00078-EN-09"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Recordall Combo",
+   "type": "Compound",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 41.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "8\" turbine + bypass assembly",
+   "source": "Badger RCO-DS-00079-EN-04"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 160",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-160. Integral strainer standard. Elliptical flange.",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 200",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "no strainer"
+    },
+    {
+     "in": 17,
+     "note": "w/ integral strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-200. Elliptical or round flange.",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 450",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12,
+     "note": "no strainer"
+    },
+    {
+     "in": 19,
+     "note": "w/ integral strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-450",
+   "popular": true,
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 1000",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14,
+     "note": "no strainer"
+    },
+    {
+     "in": 23,
+     "note": "w/ integral strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-1000",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 2000",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-2000",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 3500",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-3500",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 5500",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 26
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka T-5500",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 6200",
+   "type": "Turbine",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.6875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Cast iron, 500 mm body",
+   "source": "Badger RTS-DS-00320-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 6600 / 10000",
+   "type": "Turbine",
+   "size": "16",
+   "lengths": [
+    {
+     "in": 19.6875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Legacy; 500 mm bodies",
+   "source": "Badger RTS-T-16 / RTS-T-20 (2006)"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Turbo 6600 / 10000",
+   "type": "Turbine",
+   "size": "20",
+   "lengths": [
+    {
+     "in": 19.6875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Legacy; 500 mm bodies",
+   "source": "Badger RTS-T-16 / RTS-T-20 (2006)"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Disc M120",
+   "type": "PD",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 12.625,
+     "note": "EL"
+    },
+    {
+     "in": 13,
+     "note": "ELL long"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange only. Hex version is NPT.",
+   "popular": true,
+   "source": "Badger RDM-DS-00465-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Disc M170",
+   "type": "PD",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 15.25,
+     "note": "EL"
+    },
+    {
+     "in": 17,
+     "note": "ELL long"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Elliptical flange only. Hex version is NPT.",
+   "popular": true,
+   "source": "Badger RDM-DS-00465-EN-11"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Fire Series Meter FSMA",
+   "type": "Fire service",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 26.375
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine with integral strainer, UL/FM",
+   "source": "Badger FSM-DS-00723-EN-03"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Fire Series Meter FSMA",
+   "type": "Fire service",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 21.34375
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine with integral strainer, UL/FM",
+   "source": "Badger FSM-DS-00723-EN-03"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Fire Series Meter FSMA",
+   "type": "Fire service",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 30.3125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine with integral strainer, UL/FM",
+   "source": "Badger FSM-DS-00723-EN-03"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Fire Series Meter FSMA",
+   "type": "Fire service",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 36.53125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine with integral strainer, UL/FM",
+   "source": "Badger FSM-DS-00723-EN-03"
+  },
+  {
+   "mfr": "Badger",
+   "model": "Fire Series Meter FSMA",
+   "type": "Fire service",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 44.125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine with integral strainer, UL/FM",
+   "source": "Badger FSM-DS-00723-EN-03"
+  },
+  {
+   "mfr": "Badger",
+   "model": "FSAA assembly",
+   "type": "Fire assembly",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 33
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine or disc bypass; 12\" turbine bypass only",
+   "source": "Badger FSA-DS-00703-EN-04"
+  },
+  {
+   "mfr": "Badger",
+   "model": "FSAA assembly",
+   "type": "Fire assembly",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine or disc bypass; 12\" turbine bypass only",
+   "source": "Badger FSA-DS-00703-EN-04"
+  },
+  {
+   "mfr": "Badger",
+   "model": "FSAA assembly",
+   "type": "Fire assembly",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 53
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine or disc bypass; 12\" turbine bypass only",
+   "source": "Badger FSA-DS-00703-EN-04"
+  },
+  {
+   "mfr": "Badger",
+   "model": "FSAA assembly",
+   "type": "Fire assembly",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine or disc bypass; 12\" turbine bypass only",
+   "source": "Badger FSA-DS-00703-EN-04"
+  },
+  {
+   "mfr": "Badger",
+   "model": "FSAA assembly",
+   "type": "Fire assembly",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine or disc bypass; 12\" turbine bypass only",
+   "source": "Badger FSA-DS-00703-EN-04"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 8.9,
+     "note": "std"
+    },
+    {
+     "in": 7.9,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 8.9,
+     "note": "std"
+    },
+    {
+     "in": 7.9,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 11.0,
+     "note": "std"
+    },
+    {
+     "in": 7.9,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 11.0,
+     "note": "std"
+    },
+    {
+     "in": 9.8,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 15.7,
+     "note": "std"
+    },
+    {
+     "in": 11.8,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 15.7,
+     "note": "std"
+    },
+    {
+     "in": 13.8,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 19.7,
+     "note": "std"
+    },
+    {
+     "in": 17.7,
+     "note": "ISO"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Badger",
+   "model": "ModMAG M2000 / M5000",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ANSI Class 150 table",
+   "source": "Badger MAG-DS-01047-EN-31"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "T-10",
+   "type": "PD",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Flanged-end version. 15 1/4\" is NPT only.",
+   "popular": true,
+   "source": "Neptune PS T-10 23-010382"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "T-10",
+   "type": "PD",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Flanged-end version. 15 1/4\" is NPT only.",
+   "popular": true,
+   "source": "Neptune PS T-10 23-010382"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "meter"
+    },
+    {
+     "in": 13,
+     "note": "w/ factory test spool"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "meter"
+    },
+    {
+     "in": 17,
+     "note": "w/ separate strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12,
+     "note": "meter"
+    },
+    {
+     "in": 18,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "popular": true,
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14,
+     "note": "meter"
+    },
+    {
+     "in": 21.5,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18,
+     "note": "meter"
+    },
+    {
+     "in": 27,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20,
+     "note": "meter"
+    },
+    {
+     "in": 30,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 26,
+     "note": "meter"
+    },
+    {
+     "in": 41,
+     "note": "w/ strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka HPT",
+   "source": "Neptune PS HP Turbine 23-010197"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine 12-20",
+   "type": "Turbine",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.6875
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Metric bodies; last in 2013 catalog",
+   "source": "Neptune PS TURB 12-20 (2001)"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine 12-20",
+   "type": "Turbine",
+   "size": "16",
+   "lengths": [
+    {
+     "in": 23.625
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Metric bodies; last in 2013 catalog",
+   "source": "Neptune PS TURB 12-20 (2001)"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Turbine 12-20",
+   "type": "Turbine",
+   "size": "20",
+   "lengths": [
+    {
+     "in": 31.5
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "Metric bodies; last in 2013 catalog",
+   "source": "Neptune PS TURB 12-20 (2001)"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "TRU/FLO Compound",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 15.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Includes HP TRU/FLO. Legacy 2\" on a 3\" body exists; length unknown.",
+   "popular": true,
+   "source": "Neptune PS TRU/FLO 19-003526"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "TRU/FLO Compound",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Includes HP TRU/FLO. Legacy 2\" on a 3\" body exists; length unknown.",
+   "popular": true,
+   "source": "Neptune PS TRU/FLO 19-003526"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "TRU/FLO Compound",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Includes HP TRU/FLO. Legacy 2\" on a 3\" body exists; length unknown.",
+   "popular": true,
+   "source": "Neptune PS TRU/FLO 19-003526"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "TRU/FLO Compound",
+   "type": "Compound",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Includes HP TRU/FLO. Legacy 2\" on a 3\" body exists; length unknown.",
+   "source": "Neptune PS TRU/FLO 19-003526"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "TRU/FLO 6x8 assembly",
+   "type": "Compound",
+   "size": "6x8",
+   "lengths": [
+    {
+     "in": 55.375
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "6\" compound with 8\" end flanges",
+   "source": "Neptune PS TRU/FLO 19-003526"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP PROTECTUS III",
+   "type": "Fire assembly",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 33
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Also III S. No 3\" made. Includes strainer and bypass.",
+   "source": "Neptune PS 20-004304"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP PROTECTUS III",
+   "type": "Fire assembly",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Also III S. No 3\" made. Includes strainer and bypass.",
+   "popular": true,
+   "source": "Neptune PS 20-004304"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP PROTECTUS III",
+   "type": "Fire assembly",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 53
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Also III S. No 3\" made. Includes strainer and bypass.",
+   "source": "Neptune PS 20-004304"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP PROTECTUS III",
+   "type": "Fire assembly",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Also III S. No 3\" made. Includes strainer and bypass.",
+   "source": "Neptune PS 20-004304"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Fire Service Turbine S",
+   "type": "Fire service",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 26.125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine + UL/FM strainer assembly",
+   "source": "Neptune PS 18-001901"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Fire Service Turbine S",
+   "type": "Fire service",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 35
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine + UL/FM strainer assembly",
+   "source": "Neptune PS 18-001901"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Fire Service Turbine S",
+   "type": "Fire service",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 44.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine + UL/FM strainer assembly",
+   "source": "Neptune PS 18-001901"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Fire Service Turbine S",
+   "type": "Fire service",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 51.3125
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine + UL/FM strainer assembly",
+   "source": "Neptune PS 18-001901"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "HP Fire Service Turbine S",
+   "type": "Fire service",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 56
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine + UL/FM strainer assembly",
+   "source": "Neptune PS 18-001901"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "turbo"
+    },
+    {
+     "in": 13,
+     "note": "PD"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "turbo"
+    },
+    {
+     "in": 15.25,
+     "note": "compound"
+    },
+    {
+     "in": 17,
+     "note": "PD"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12,
+     "note": "turbo"
+    },
+    {
+     "in": 17,
+     "note": "compound"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14,
+     "note": "turbo"
+    },
+    {
+     "in": 20,
+     "note": "compound"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18,
+     "note": "turbo"
+    },
+    {
+     "in": 24,
+     "note": "compound"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 26
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Neptune",
+   "model": "MACH 10",
+   "type": "Ultrasonic",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Neptune PS MACH 10 23-010452 / 23-010472"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MVR 100",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13,
+     "note": "std, compact + spool"
+    },
+    {
+     "in": 9,
+     "note": "compact"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Mueller MVR 2017"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MVR 160",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17,
+     "note": "std, compact + 2 spools"
+    },
+    {
+     "in": 10,
+     "note": "compact"
+    }
+   ],
+   "confidence": "confirmed",
+   "popular": true,
+   "source": "Mueller MVR 2017"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MVR 350 / 650 / 1300",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "MVR line stops at 6\"",
+   "source": "Mueller MVR 2017"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MVR 350 / 650 / 1300",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "MVR line stops at 6\"",
+   "source": "Mueller MVR 2017"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MVR 350 / 650 / 1300",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "MVR line stops at 6\"",
+   "source": "Mueller MVR 2017"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MCT II Compound",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Not the usual compound lengths. 8\" is two-piece CI with external bypass. Discontinued 2010.",
+   "popular": true,
+   "source": "Mueller MCT II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MCT II Compound",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Not the usual compound lengths. 8\" is two-piece CI with external bypass. Discontinued 2010.",
+   "source": "Mueller MCT II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MCT II Compound",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 29
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Not the usual compound lengths. 8\" is two-piece CI with external bypass. Discontinued 2010.",
+   "source": "Mueller MCT II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MCT II Compound",
+   "type": "Compound",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 36.5
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Not the usual compound lengths. 8\" is two-piece CI with external bypass. Discontinued 2010.",
+   "source": "Mueller MCT II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MCT II Compound",
+   "type": "Compound",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 55.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Not the usual compound lengths. 8\" is two-piece CI with external bypass. Discontinued 2010.",
+   "source": "Mueller MCT II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13,
+     "note": "std"
+    },
+    {
+     "in": 9,
+     "note": "compact"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17,
+     "note": "std"
+    },
+    {
+     "in": 10,
+     "note": "compact"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12,
+     "note": "meter"
+    },
+    {
+     "in": 18,
+     "note": "w/ std strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14,
+     "note": "meter"
+    },
+    {
+     "in": 21.5,
+     "note": "w/ std strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18,
+     "note": "meter"
+    },
+    {
+     "in": 27,
+     "note": "w/ std strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20,
+     "note": "meter"
+    },
+    {
+     "in": 30,
+     "note": "w/ std strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Horizon",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 24,
+     "note": "meter"
+    },
+    {
+     "in": 36,
+     "note": "w/ std strainer"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Horizontal turbine. Discontinued 2011.",
+   "source": "Mueller Horizon sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "562 IIS / 572 IIS",
+   "type": "PD",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Hersey 500 Series IIS sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "562 IIS / 572 IIS",
+   "type": "PD",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Hersey 500 Series IIS sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/o bypass",
+   "type": "Fire service",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Unibody with integral strainer",
+   "source": "Mueller FM3 without Bypass"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/o bypass",
+   "type": "Fire service",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Unibody with integral strainer",
+   "source": "Mueller FM3 without Bypass"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/o bypass",
+   "type": "Fire service",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Unibody with integral strainer",
+   "source": "Mueller FM3 without Bypass"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/o bypass",
+   "type": "Fire service",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 28
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Unibody with integral strainer",
+   "source": "Mueller FM3 without Bypass"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/o bypass",
+   "type": "Fire service",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 39.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Unibody with integral strainer",
+   "source": "Mueller FM3 without Bypass"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/ bypass",
+   "type": "Fire assembly",
+   "size": "3x3/4",
+   "lengths": [
+    {
+     "in": 33
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "FM3 + detector check + bypass",
+   "source": "Mueller FM3 with Bypass 2023"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/ bypass",
+   "type": "Fire assembly",
+   "size": "4x1",
+   "lengths": [
+    {
+     "in": 35
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "FM3 + detector check + bypass",
+   "source": "Mueller FM3 with Bypass 2023"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/ bypass",
+   "type": "Fire assembly",
+   "size": "6x2",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "FM3 + detector check + bypass",
+   "popular": true,
+   "source": "Mueller FM3 with Bypass 2023"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/ bypass",
+   "type": "Fire assembly",
+   "size": "8x2",
+   "lengths": [
+    {
+     "in": 53
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "FM3 + detector check + bypass",
+   "source": "Mueller FM3 with Bypass 2023"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "FM3 w/ bypass",
+   "type": "Fire assembly",
+   "size": "10x2",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "FM3 + detector check + bypass",
+   "source": "Mueller FM3 with Bypass 2023"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MFM II",
+   "type": "Fire assembly",
+   "size": "4x2",
+   "lengths": [
+    {
+     "in": 33
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Discontinued 2011",
+   "source": "Mueller MFM II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MFM II",
+   "type": "Fire assembly",
+   "size": "6x2",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Discontinued 2011",
+   "source": "Mueller MFM II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MFM II",
+   "type": "Fire assembly",
+   "size": "6x3",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Discontinued 2011",
+   "popular": true,
+   "source": "Mueller MFM II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MFM II",
+   "type": "Fire assembly",
+   "size": "8x4",
+   "lengths": [
+    {
+     "in": 53
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Discontinued 2011",
+   "popular": true,
+   "source": "Mueller MFM II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MFM II",
+   "type": "Fire assembly",
+   "size": "10x6",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Discontinued 2011",
+   "source": "Mueller MFM II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "MFM II",
+   "type": "Fire assembly",
+   "size": "12x6",
+   "lengths": [
+    {
+     "in": 68
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Discontinued 2011",
+   "source": "Mueller MFM II sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "HbMAG",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools",
+   "source": "Mueller HbMAG sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "HbMAG",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools",
+   "source": "Mueller HbMAG sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "HbMAG",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools",
+   "source": "Mueller HbMAG sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "HbMAG",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools",
+   "source": "Mueller HbMAG sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "HbMAG",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools",
+   "source": "Mueller HbMAG sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "HbMAG",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short mag body; needs spools",
+   "source": "Mueller HbMAG sheet"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Mueller SSM",
+   "type": "Ultrasonic",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Mueller-branded successor line",
+   "source": "Mueller SSM 24714"
+  },
+  {
+   "mfr": "Hersey",
+   "model": "Mueller SSM",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Mueller-branded successor line",
+   "source": "Mueller SSM 24714"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "base"
+    },
+    {
+     "in": 13,
+     "note": "w/ 3\" spool"
+    },
+    {
+     "in": 15.25,
+     "note": "w/ 5 1/4\" spool"
+    },
+    {
+     "in": 17,
+     "note": "w/ 7\" spool"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave",
+   "type": "Ultrasonic",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO lengths",
+   "source": "Master Meter Octave install guide"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave High Flow",
+   "type": "Ultrasonic",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO body, AWWA floating flanges",
+   "source": "Master Meter Octave HF data sheet"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave High Flow",
+   "type": "Ultrasonic",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO body, AWWA floating flanges",
+   "source": "Master Meter Octave HF data sheet"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Octave High Flow",
+   "type": "Ultrasonic",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO body, AWWA floating flanges",
+   "source": "Master Meter Octave HF data sheet"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Intermediate MS Multi-Jet",
+   "type": "Multi-jet",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Master Meter MS multi-jet sheet"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "Intermediate MS Multi-Jet",
+   "type": "Multi-jet",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Master Meter MS multi-jet sheet"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 9.1
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.9
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.7
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.7
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Master Meter",
+   "model": "WT Turbine",
+   "type": "Turbine",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "2008 catalog; confirm availability",
+   "source": "Master Meter 2008 catalog"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 88D",
+   "type": "Single-jet",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka S88. Short body; brass spools available.",
+   "popular": true,
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 88DL",
+   "type": "Single-jet",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "AWWA length version of the 88",
+   "popular": true,
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 130D",
+   "type": "Single-jet",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 9.75,
+     "note": "bare"
+    },
+    {
+     "in": 15.25,
+     "note": "w/ flange spools"
+    },
+    {
+     "in": 17,
+     "note": "w/ flange spools"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka S130",
+   "popular": true,
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 175D",
+   "type": "Single-jet",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 11.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "aka S175",
+   "popular": true,
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 500D",
+   "type": "Single-jet",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 13.75
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 500D",
+   "type": "Single-jet",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 13.75
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 1000D",
+   "type": "Single-jet",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Spectrum 1000D",
+   "type": "Single-jet",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Metron Dec 2025 datasheet"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Enduro 2800D / 3600D",
+   "type": "Single-jet",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Metron Enduro Dec 2025"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Enduro 2800D / 3600D",
+   "type": "Single-jet",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "Metron Enduro Dec 2025"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Enduro FSA",
+   "type": "Fire assembly",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 45
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "FSA6 / FSA8 meter + strainer + check",
+   "source": "Metron Enduro FSA Oct 2024"
+  },
+  {
+   "mfr": "Metron-Farnier",
+   "model": "Enduro FSA",
+   "type": "Fire assembly",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 53
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "FSA6 / FSA8 meter + strainer + check",
+   "source": "Metron Enduro FSA Oct 2024"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMN Multi-Jet",
+   "type": "Multi-jet",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "PMN09 / PMN10 / PMN12",
+   "source": "Zenner PMN Rev B"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMN Multi-Jet",
+   "type": "Multi-jet",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "PMN10"
+    },
+    {
+     "in": 17,
+     "note": "PMN12"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "PMN09 / PMN10 / PMN12",
+   "source": "Zenner PMN Rev B"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PPD",
+   "type": "PD",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "PPD09 / PPD12; T suffix = test port, same length",
+   "source": "Zenner PPD sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PPD",
+   "type": "PD",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "PPD09 / PPD12; T suffix = test port, same length",
+   "source": "Zenner PPD sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSUR Stealth",
+   "type": "Ultrasonic",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ZSUR09 / ZSUR12",
+   "source": "Zenner ZSUR Rev N"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSUR Stealth",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ZSUR09 / ZSUR12",
+   "source": "Zenner ZSUR Rev N"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZSU / ZSUS Stealth",
+   "type": "Ultrasonic",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.6875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Turbine footprints",
+   "source": "Zenner ZSU Rev R"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 7.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 8.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTM / ZTMR",
+   "type": "Turbine",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.625
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Short cast iron body; 2\" has 4-hole flange",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTML / ZTMLR",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long body with test port",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTML / ZTMLR",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long body with test port",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTML / ZTMLR",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long body with test port",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTML / ZTMLR",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long body with test port",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTML / ZTMLR",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Long body with test port",
+   "source": "Zenner ZTM sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTMB",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze",
+   "source": "Zenner ZTMB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTMB",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze",
+   "source": "Zenner ZTMB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTMB",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze",
+   "source": "Zenner ZTMB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTMB",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze",
+   "source": "Zenner ZTMB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTMB",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze",
+   "source": "Zenner ZTMB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZTMB",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze",
+   "source": "Zenner ZTMB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMC Compound",
+   "type": "Compound",
+   "size": "3x3/4",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Cast iron; 8\" includes strainer",
+   "source": "Zenner PMC sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMC Compound",
+   "type": "Compound",
+   "size": "4x1",
+   "lengths": [
+    {
+     "in": 29
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Cast iron; 8\" includes strainer",
+   "source": "Zenner PMC sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMC Compound",
+   "type": "Compound",
+   "size": "6x1 1/2",
+   "lengths": [
+    {
+     "in": 36.5
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Cast iron; 8\" includes strainer",
+   "source": "Zenner PMC sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMC Compound",
+   "type": "Compound",
+   "size": "8x2",
+   "lengths": [
+    {
+     "in": 55.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Cast iron; 8\" includes strainer",
+   "source": "Zenner PMC sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMCB Compound",
+   "type": "Compound",
+   "size": "2x5/8",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze; 8\" includes strainer",
+   "source": "Zenner PMCB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMCB Compound",
+   "type": "Compound",
+   "size": "3x3/4",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze; 8\" includes strainer",
+   "source": "Zenner PMCB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMCB Compound",
+   "type": "Compound",
+   "size": "4x3/4",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze; 8\" includes strainer",
+   "source": "Zenner PMCB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMCB Compound",
+   "type": "Compound",
+   "size": "6x1 1/2",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze; 8\" includes strainer",
+   "source": "Zenner PMCB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "PMCB Compound",
+   "type": "Compound",
+   "size": "8x2",
+   "lengths": [
+    {
+     "in": 55.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Bronze; 8\" includes strainer",
+   "source": "Zenner PMCB sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZCS Compound",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Single body",
+   "source": "Zenner ZCS sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZCS Compound",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Single body",
+   "source": "Zenner ZCS sheet"
+  },
+  {
+   "mfr": "Zenner",
+   "model": "ZCS Compound",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 21
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Single body",
+   "source": "Zenner ZCS sheet"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C700",
+   "type": "PD",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ABB / AMCO / Elster. 15 1/4\" is threaded only.",
+   "source": "AMCO IND-C700"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C700",
+   "type": "PD",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ABB / AMCO / Elster. 15 1/4\" is threaded only.",
+   "source": "AMCO IND-C700"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C3000 Compound",
+   "type": "Compound",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "AMCO IND-C3000"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C3000 Compound",
+   "type": "Compound",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "AMCO IND-C3000"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C3000 Compound",
+   "type": "Compound",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "AMCO IND-C3000"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C3000 Compound",
+   "type": "Compound",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 24
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "AMCO IND-C3000"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "C3000 Compound",
+   "type": "Compound",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 34.5,
+     "note": "iron, adjustable to 33 1/8"
+    },
+    {
+     "in": 34,
+     "note": "bronze, adjustable to 32 5/8"
+    }
+   ],
+   "confidence": "confirmed",
+   "source": "AMCO IND-C3000"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (bronze)",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "3\" is 11 7/8, not 12",
+   "source": "AMCO IND-T3-BZ"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (bronze)",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "3\" is 11 7/8, not 12",
+   "source": "AMCO IND-T3-BZ"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (bronze)",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 11.875
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "3\" is 11 7/8, not 12",
+   "source": "AMCO IND-T3-BZ"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (bronze)",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "3\" is 11 7/8, not 12",
+   "source": "AMCO IND-T3-BZ"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (bronze)",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "3\" is 11 7/8, not 12",
+   "source": "AMCO IND-T3-BZ"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (bronze)",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "3\" is 11 7/8, not 12",
+   "source": "AMCO IND-T3-BZ"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (cast iron)",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 12.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ISO body",
+   "source": "AMCO IND-T3-CI"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (cast iron)",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 12.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ISO body",
+   "source": "AMCO IND-T3-CI"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (cast iron)",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 16.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ISO body",
+   "source": "AMCO IND-T3-CI"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (cast iron)",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 19
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ISO body",
+   "source": "AMCO IND-T3-CI"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (cast iron)",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 19.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ISO body",
+   "source": "AMCO IND-T3-CI"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T3000 (cast iron)",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20.5
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Kent / ISO body",
+   "source": "AMCO IND-T3-CI"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "T4000",
+   "type": "Turbine",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "10\" and 12\" are ISO bodies",
+   "source": "Elster T4000-112-12"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "H4000",
+   "type": "Turbine",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 12.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Woltmann; 6\"-12\" sheet values unreliable, omitted",
+   "source": "Elster H4000 2014"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "H4000",
+   "type": "Turbine",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 12.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Woltmann; 6\"-12\" sheet values unreliable, omitted",
+   "source": "Elster H4000 2014"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "H4000",
+   "type": "Turbine",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 16.25
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Woltmann; 6\"-12\" sheet values unreliable, omitted",
+   "source": "Elster H4000 2014"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "H4000",
+   "type": "Turbine",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 19
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Woltmann; 6\"-12\" sheet values unreliable, omitted",
+   "source": "Elster H4000 2014"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.75
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Standard and RB versions. Turbine footprints.",
+   "source": "Elster evoQ4 2017"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 AL / LF",
+   "type": "Mag",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Alternative-length and low-flow versions",
+   "source": "Elster evoQ4 AL / LF 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 AL / LF",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 10,
+     "note": "AL3"
+    },
+    {
+     "in": 15.25,
+     "note": "AL1"
+    },
+    {
+     "in": 17,
+     "note": "AL2 / LF"
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "Alternative-length and low-flow versions",
+   "source": "Elster evoQ4 AL / LF 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 FSM",
+   "type": "Fire service",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 13
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "UL/FM; spools for C703 assembly lengths",
+   "source": "Elster evoQ4 FSM 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 FSM",
+   "type": "Fire service",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 17
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "UL/FM; spools for C703 assembly lengths",
+   "source": "Elster evoQ4 FSM 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 FSM",
+   "type": "Fire service",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 12
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "UL/FM; spools for C703 assembly lengths",
+   "source": "Elster evoQ4 FSM 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 FSM",
+   "type": "Fire service",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 14
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "UL/FM; spools for C703 assembly lengths",
+   "source": "Elster evoQ4 FSM 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 FSM",
+   "type": "Fire service",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 18
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "UL/FM; spools for C703 assembly lengths",
+   "source": "Elster evoQ4 FSM 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "evoQ4 FSM",
+   "type": "Fire service",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 20
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "UL/FM; spools for C703 assembly lengths",
+   "source": "Elster evoQ4 FSM 2018"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "1 1/2",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.8
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "AquaMaster",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7
+    }
+   ],
+   "confidence": "confirmed",
+   "notes": "ISO short body",
+   "source": "AMCO AM-TS"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "2",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "3",
+   "lengths": [
+    {
+     "in": 7.9
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "4",
+   "lengths": [
+    {
+     "in": 9.8
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "6",
+   "lengths": [
+    {
+     "in": 11.8
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "8",
+   "lengths": [
+    {
+     "in": 13.8,
+     "note": "AMCO sheet"
+    },
+    {
+     "in": 16.5,
+     "note": "ABB MFE sheet"
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "10",
+   "lengths": [
+    {
+     "in": 17.7,
+     "note": "AMCO"
+    },
+    {
+     "in": 19.2,
+     "note": "ABB MFE"
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  },
+  {
+   "mfr": "Elster/Kent",
+   "model": "MagMaster",
+   "type": "Mag",
+   "size": "12",
+   "lengths": [
+    {
+     "in": 19.7,
+     "note": "AMCO"
+    },
+    {
+     "in": 21.2,
+     "note": "ABB MFE"
+    }
+   ],
+   "confidence": "unverified",
+   "notes": "AMCO and ABB sheets disagree at 8\"-12\"",
+   "source": "AMCO MAGMASTER; ABB MFE"
+  }
+ ]
+}
